@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <title>Agent Communications Explorer</title>
+
+  <link
+    rel="stylesheet"
+    href="styles.css"
+  />
+</head>
+
+<body>
+  <main class="dashboard">
+    <section
+      class="panel overall-activity-panel"
+      aria-label="Overall agent activity">
+
+      <div
+        id="overallActivityCharts"
+        class="overall-activity-charts">
+      </div>
+    </section>
+
+    <section
+      class="panel stock-price-panel"
+      aria-label="Stock price and market sentiment">
+
+      <div class="stock-price-panel-heading">
+        <span>Stock price</span>
+
+        <div
+          id="stockSentimentLegend"
+          class="stock-sentiment-legend"
+          aria-label="Market sentiment legend">
+        </div>
+      </div>
+
+      <div
+        id="stockPriceChart"
+        class="stock-price-chart"
+        aria-label="Stock price across all rounds">
+      </div>
+    </section>
+
+    <section
+      class="panel timeline-panel"
+      aria-label="Communication timeline">
+
+      <div class="timeline-toolbar">
+        <div
+          id="timelineLegend"
+          class="legend"
+          aria-label="Dialogue type legend">
+        </div>
+
+        <label
+          class="round-control"
+          for="roundSelect">
+
+          <select
+            id="roundSelect"
+            aria-label="Choose a day">
+          </select>
+        </label>
+      </div>
+
+      <div
+        id="roundInfo"
+        class="round-info timeline-round-info">
+      </div>
+
+      <div
+        id="timeline"
+        class="timeline"
+        aria-live="polite">
+      </div>
+
+      <div class="timeline-footer">
+        <div class="timeline-controls-row">
+          <div class="filter-control">
+            <select
+              id="messageFilter"
+              aria-label="Choose message filtering option">
+
+              <option
+                value=""
+                selected>
+                Choose filtering option
+              </option>
+
+              <option value="tfidf-round">
+                TF-IDF by round
+              </option>
+
+              <option value="tfidf-global">
+                TF-IDF across timeline
+              </option>
+
+              <option value="llm">
+                Opus 4.8 selection
+              </option>
+            </select>
+          </div>
+
+          <div
+            id="messageSearch"
+            class="message-search">
+
+            <label class="message-search-field">
+              <span class="sr-only">
+                Search messages
+              </span>
+
+              <input
+                id="messageSearchInput"
+                type="search"
+                placeholder="Search messages"
+                autocomplete="off"
+              />
+            </label>
+
+            <button
+              id="messageSearchButton"
+              class="message-search-button"
+              type="button">
+              Search
+            </button>
+
+            <div
+              class="message-search-navigation"
+              aria-label="Search result navigation">
+
+              <button
+                id="messageSearchPrevious"
+                class="message-search-arrow"
+                type="button"
+                aria-label="Previous matching message"
+                disabled>
+                ‹
+              </button>
+
+              <span
+                id="messageSearchCount"
+                class="message-search-count"
+                aria-live="polite">
+                0/0
+              </span>
+
+              <button
+                id="messageSearchNext"
+                class="message-search-arrow"
+                type="button"
+                aria-label="Next matching message"
+                disabled>
+                ›
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="panel internal-state-panel"
+      aria-label="Agent internal states">
+
+      <div class="internal-state-panel-heading">
+        <div
+          id="internalStateLegend"
+          class="internal-state-legend"
+          aria-label="Internal state legend">
+        </div>
+      </div>
+
+      <div
+        id="internalStateHeatmap"
+        class="internal-state-heatmap"
+        aria-live="polite">
+      </div>
+    </section>
+
+    <section
+      class="panel agent-metrics-panel"
+      aria-label="Agent activity and selected message details">
+
+      <div class="agent-metrics-heading">
+        Agent activity
+      </div>
+
+      <div class="agent-metrics-content">
+        <div id="agentVolumeChart"></div>
+        <div id="agentChannelChart"></div>
+      </div>
+
+      <div
+        id="messageDetails"
+        class="message-details"
+        hidden>
+      </div>
+    </section>
+  </main>
+
+  <div
+    id="tooltip"
+    class="tooltip"
+    role="tooltip"
+    hidden>
+  </div>
+
+  <script src="data.js"></script>
+
+  <script src="js/config.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/data-helpers.js"></script>
+  <script src="js/agents.js"></script>
+  <script src="js/replies.js"></script>
+  <script src="js/tooltip.js"></script>
+  <script src="js/details.js"></script>
+  <script src="js/selection.js"></script>
+  <script src="js/timeline-layout.js"></script>
+  <script src="js/message-importance.js"></script>
+  <script src="js/timeline-renderer.js"></script>
+  <script src="js/controls.js"></script>
+  <script src="js/agent-activity.js"></script>
+  <script src="js/overall-activity.js"></script>
+  <script src="js/internal-state-heatmap.js"></script>
+  <script src="js/message-search.js"></script>
+  <script src="js/stock-price-chart.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

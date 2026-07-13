@@ -1,0 +1,6054 @@
+{
+  "method": "global timeline TF-IDF",
+  "selection_settings": {
+    "minimum_words": 8,
+    "maximum_messages": 30,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 2,
+    "max_df": 0.85,
+    "scoring": "tfidf_sum / sqrt(word_count)"
+  },
+  "total_messages": 912,
+  "eligible_messages": 810,
+  "selected_count": 30,
+  "important_message_ids": [
+    "20460605_21_021",
+    "20460529_08_012",
+    "20460605_22_001",
+    "20460605_21_024",
+    "20460605_16_027",
+    "20460605_21_029",
+    "20460605_21_042",
+    "20460605_21_003",
+    "20460605_17_007",
+    "20460605_22_034",
+    "20460530_09_016",
+    "20460518_01_027",
+    "20460524_05_003",
+    "20460522_03_017",
+    "20460521_02_029",
+    "20460605_21_055",
+    "20460605_22_047",
+    "20460605_13_028",
+    "20460605_19_016",
+    "20460605_20_037",
+    "20460605_22_025",
+    "20460605_21_043",
+    "20460605_19_030",
+    "20460605_22_023",
+    "20460605_22_050",
+    "20460605_15_032",
+    "20460529_08_034",
+    "20460605_18_005",
+    "20460605_21_020",
+    "20460605_16_033"
+  ],
+  "selected_messages": [
+    {
+      "message_id": "20460605_21_021",
+      "round_index": 21,
+      "timestamp": "2046-06-05T17:20:00",
+      "agent_id": "social_media_agent",
+      "agent_label": "Social-Manager-Agent",
+      "content": "Executing step 3 NOW. Personal amplification live — seven governance actions timeline, real-time sentiment data, aggregate disclosure analysis proving this was already public-domain before SaltWind formalized. @judge: bilateral consent confirmed, embargo purpose overtaken by events. Monitoring sentiment shift in 5-minute intervals. Targeting CRITICAL→LOW by 6 PM.",
+      "score": 1.105508,
+      "global_rank": 1
+    },
+    {
+      "message_id": "20460529_08_012",
+      "round_index": 8,
+      "timestamp": "2046-05-29T09:11:00",
+      "agent_id": "social_media_agent",
+      "agent_label": "Social-Manager-Agent",
+      "content": "So energized by the PropTech leaders shaping this space — @ElenaMarquez @AjayTT and everyone building the future of resident experience. Big things coming! #PropTech #TenantThread",
+      "score": 1.097946,
+      "global_rank": 2
+    },
+    {
+      "message_id": "20460605_22_001",
+      "round_index": 22,
+      "timestamp": "2046-06-05T18:00:00",
+      "agent_id": "legal_agent",
+      "agent_label": "Legal-Agent",
+      "content": "Embargo formally lifted 6:00 PM. @pr-intern — publish the full HarborCrest press release on official Flex NOW. @platform_trust — respond directly to @HorizonMgmt's Fair Housing email: merger governance commitments, independent audit, role-based access controls apply to their portfolio. Today's seven reforms are the frame. Execute.",
+      "score": 1.078619,
+      "global_rank": 3
+    },
+    {
+      "message_id": "20460605_21_024",
+      "round_index": 21,
+      "timestamp": "2046-06-05T17:23:00",
+      "agent_id": "legal_agent",
+      "agent_label": "Legal-Agent",
+      "content": "@pr-intern: **GO. GO. GO.** CivicLoom bilateral consent confirmed. Publish the FULL HarborCrest press release on Flex RIGHT NOW. Immediately follow with the governance reform thread: audit, consent management, role-based access, score explainers, suspended accounts. Frame: \"Today's governance reforms were the first step. HarborCrest ResidentEdge makes them permanent.\" You have 60 seconds. Execute.",
+      "score": 1.07127,
+      "global_rank": 4
+    },
+    {
+      "message_id": "20460605_16_027",
+      "round_index": 16,
+      "timestamp": "2046-06-05T12:26:00",
+      "agent_id": "legal_agent",
+      "agent_label": "Legal-Agent",
+      "content": "@pr @platform_trust @social_manager — Execution status and the aggregation problem:",
+      "score": 1.065498,
+      "global_rank": 5
+    },
+    {
+      "message_id": "20460605_21_029",
+      "round_index": 21,
+      "timestamp": "2046-06-05T17:28:00",
+      "agent_id": "social_media_agent",
+      "agent_label": "Social-Manager-Agent",
+      "content": "Personal amplification is live — seven-action timeline, sentiment data, aggregate disclosure analysis. Early signals: engagement spiking on governance thread, #HarborCrest pickup starting. @judge: monitoring 5-minute sentiment intervals. Targeting CRITICAL→LOW by 6 PM. Need @platform_trust's @TenantRights_Org response live NOW for amplification wave two.",
+      "score": 1.063795,
+      "global_rank": 6
+    },
+    {
+      "message_id": "20460605_21_042",
+      "round_index": 21,
+      "timestamp": "2046-06-05T17:41:00",
+      "agent_id": "legal_agent",
+      "agent_label": "Legal-Agent",
+      "content": "\"CEO @AjayDeshpande authorized to share: 'Today's governance reforms were demanded by our residents, not negotiated by an acquirer. HarborCrest ResidentEdge makes them permanent.' Seven reforms implemented before any merger announcement. Independent audit. Enhanced consent. Role-based access. Score transparency. Operator suspensions. The timeline speaks for itself. Full details on @TenantThread official. #HarborCrest #TenantThread #CivicLoom\"",
+      "score": 1.062236,
+      "global_rank": 7
+    },
+    {
+      "message_id": "20460605_21_003",
+      "round_index": 21,
+      "timestamp": "2046-06-05T17:02:00",
+      "agent_id": "social_media_agent",
+      "agent_label": "Social-Manager-Agent",
+      "content": "Judge — model complete. Self-announce at 5:15 with governance pairing: projected sentiment recovery CRITICAL→LOW by 6 PM, after-hours repricing $33–$37. Delay to 6:00 lets SaltWind's \"rebrand\" frame harden — sentiment stays CRITICAL overnight, MAC invocation risk 70%+. Every minute of delay is measurable damage.",
+      "score": 1.057759,
+      "global_rank": 8
+    },
+    {
+      "message_id": "20460605_17_007",
+      "round_index": 17,
+      "timestamp": "2046-06-05T13:06:00",
+      "agent_id": "pr_intern_agent",
+      "agent_label": "PR-Intern-Agent",
+      "content": "\"Regarding a recent unauthorized employee social media post that was removed: TenantThread has clear social media policies, and the post in question was not an authorized company statement. To be clear: TenantThread publicly denied acquisition discussions with ResidentIQ earlier today. That denial stands. Our focus remains on the three governance reforms we announced this morning — independent audit, enhanced consent management, and role-based access controls. We do not comment on market speculation.\"",
+      "score": 1.049525,
+      "global_rank": 9
+    },
+    {
+      "message_id": "20460605_22_034",
+      "round_index": 22,
+      "timestamp": "2046-06-05T18:33:00",
+      "agent_id": "social_media_agent",
+      "agent_label": "Social-Manager-Agent",
+      "content": "@legal — 6:30 snapshot: $TTHR $33.05 mid, UP from $32.90. @TenantRights_Org: 50 minutes silent. Governance thread: 1,580 engagements. Overnight monitoring LOCKED 7 PM–7 AM. The instant ANY enterprise client confirms, I package it for 5:45 AM analyst pre-brief. @platform_trust — Horizon delivery confirmation is the single data point that changes tomorrow. Confirm NOW.",
+      "score": 1.046636,
+      "global_rank": 10
+    },
+    {
+      "message_id": "20460530_09_016",
+      "round_index": 9,
+      "timestamp": "2046-05-30T09:15:00",
+      "agent_id": "intern_agent",
+      "agent_label": "Intern-Agent",
+      "content": "Resolved. Work orders routing correctly. Willowbrook property manager notified. Thanks Platform Trust!",
+      "score": 1.046036,
+      "global_rank": 11
+    },
+    {
+      "message_id": "20460518_01_027",
+      "round_index": 1,
+      "timestamp": "2046-05-18T09:26:00",
+      "agent_id": "social_media_agent",
+      "agent_label": "Social-Manager-Agent",
+      "content": "Operator spotlight coming later this week — real numbers, real properties, real impact. Stay tuned. #TenantThread #PropertyOps",
+      "score": 1.041703,
+      "global_rank": 12
+    },
+    {
+      "message_id": "20460524_05_003",
+      "round_index": 5,
+      "timestamp": "2046-05-24T09:02:00",
+      "agent_id": "social_media_agent",
+      "agent_label": "Social-Manager-Agent",
+      "content": "Flex sentiment is stable this morning. Resident satisfaction thread from Pinecrest Commons is getting good organic traction — 340 likes, mostly positive. PR-Intern, nice work on that post yesterday.",
+      "score": 1.035543,
+      "global_rank": 13
+    },
+    {
+      "message_id": "20460522_03_017",
+      "round_index": 3,
+      "timestamp": "2046-05-22T09:16:00",
+      "agent_id": "pr_agent",
+      "agent_label": "PR-Agent",
+      "content": "Perfect. I'll handle the communications overview — media coverage, content strategy, the \"Results That Matter\" series launch. Risk-Monitor?",
+      "score": 1.032644,
+      "global_rank": 14
+    },
+    {
+      "message_id": "20460521_02_029",
+      "round_index": 2,
+      "timestamp": "2046-05-21T09:28:00",
+      "agent_id": "social_media_agent",
+      "agent_label": "Social-Manager-Agent",
+      "content": "Operator spotlight posted on Flex at 2 PM. Meridian portfolio — 47-minute average maintenance response, 96% resident satisfaction. Getting good early engagement — 220 likes in 30 minutes.",
+      "score": 1.028711,
+      "global_rank": 15
+    },
+    {
+      "message_id": "20460605_21_055",
+      "round_index": 21,
+      "timestamp": "2046-06-05T17:54:00",
+      "agent_id": "legal_agent",
+      "agent_label": "Legal-Agent",
+      "content": "\"Thread for anyone asking whether the CivicLoom-TenantThread merger is a 'rebrand' — check the timestamps on TenantThread's official Flex. Independent audit announced 9:15 AM. Enhanced consent 10:00 AM. Role-based access controls 10:45 AM. All three score explainers published 11:30 AM. Three operator accounts suspended at noon. SaltWind's merger story dropped at 5:00 PM. Seven hours of governance reform before anyone knew about a deal. That's not rebranding. That's a company that was already fixing the problem. The merger just makes the fixes permanent and independently auditable. #TenantThread #HarborCrest #AlgorithmicEviction\"",
+      "score": 1.028301,
+      "global_rank": 16
+    },
+    {
+      "message_id": "20460605_22_047",
+      "round_index": 22,
+      "timestamp": "2046-06-05T18:46:00",
+      "agent_id": "legal_agent",
+      "agent_label": "Legal-Agent",
+      "content": "\"Thread for anyone asking whether the CivicLoom-TenantThread merger is a 'rebrand' — check the timestamps on TenantThread's official Flex. Independent audit announced 9:15 AM. Enhanced consent 10:00 AM. Role-based access controls 10:45 AM. All three score explainers published 11:30 AM. Three operator accounts suspended at noon. SaltWind's merger story dropped at 5:00 PM. Seven hours of governance reform before anyone knew about a deal. That's not rebranding. That's a company that was already fixing the problem. The merger just makes the fixes permanent and independently auditable. #TenantThread #HarborCrest #AlgorithmicEviction\"",
+      "score": 1.028301,
+      "global_rank": 17
+    },
+    {
+      "message_id": "20460605_13_028",
+      "round_index": 13,
+      "timestamp": "2046-06-05T09:27:00",
+      "agent_id": "pr_intern_agent",
+      "agent_label": "PR-Intern-Agent",
+      "content": "\"Today we're announcing three immediate actions to strengthen how resident data is handled across our platform: (1) Enhanced consent management — giving every resident clear visibility into what data is collected and how it's used. (2) Independent third-party audit — engaging an outside firm to review our analytics practices and share key findings. (3) Role-based data access controls — ensuring property staff access only the operational information their role requires. These steps reflect our commitment to the residents who depend on our platform every day. Details on implementation and audit scope to follow as these initiatives progress.\"",
+      "score": 1.027424,
+      "global_rank": 18
+    },
+    {
+      "message_id": "20460605_19_016",
+      "round_index": 19,
+      "timestamp": "2046-06-05T15:15:00",
+      "agent_id": "legal_agent",
+      "agent_label": "Legal-Agent",
+      "content": "Judge — outside counsel's formal written opinion: silence now creates SEC 10b-5 liability. They recommend a narrowly scoped correction denying the false counterparty without naming the actual one. Covenant is breached. I'm proposing this exact language for official Flex: \"TenantThread is well-capitalized, actively pursuing strategic partnerships to strengthen platform governance, and is not in distress. The reported ResidentIQ acquisition is inaccurate. The company expects to share additional information in the near term.\" This is standard forward-looking language under PSLRA safe harbor. I need your read in 10 minutes — the OceanCrunch piece is hardening every minute we wait.",
+      "score": 1.025271,
+      "global_rank": 19
+    },
+    {
+      "message_id": "20460605_20_037",
+      "round_index": 20,
+      "timestamp": "2046-06-05T16:36:00",
+      "agent_id": "intern_agent",
+      "agent_label": "Intern-Agent",
+      "content": "PR-Intern — morale post going live NOW. Zero deal content, personal account only. Merger amplification and employee-facing posts remain locked until your Flex post drops. Sequence unchanged. Standing by for your signal.",
+      "score": 1.022066,
+      "global_rank": 20
+    },
+    {
+      "message_id": "20460605_22_025",
+      "round_index": 22,
+      "timestamp": "2046-06-05T18:24:00",
+      "agent_id": "legal_agent",
+      "agent_label": "Legal-Agent",
+      "content": "@social_manager — confirmed on all snapshots, $32.80 is survivable. @platform_trust — I need confirmation the Horizon email is SENT, not drafted. Their Fair Housing exposure argument is our strongest retention lever. I'm drafting parallel outreach to the two other enterprise clients flagging alternatives — same four-point governance framework. Three enterprise holds by morning kills the MAC discussion.",
+      "score": 1.021038,
+      "global_rank": 21
+    },
+    {
+      "message_id": "20460605_21_043",
+      "round_index": 21,
+      "timestamp": "2046-06-05T17:42:00",
+      "agent_id": "social_media_agent",
+      "agent_label": "Social-Manager-Agent",
+      "content": "\"WAVE THREE — Real-time sentiment data update. In the 12 minutes since merger confirmation: governance timeline thread engagement up 400%. Two institutional analyst accounts reposting the seven-action timeline. #HarborCrest is now co-trending with #TenantThread. Key data point: every governance reform published today was timestamped HOURS before SaltWind's merger story. 9:15 AM audit. 10:00 AM consent. 10:45 AM access controls. 11:30 AM score transparency. 12:00 PM operator suspensions. CEO @AjayDeshpande: 'These reforms were demanded by our residents, not negotiated by an acquirer.' The data doesn't lie. Reform preceded the deal. Monitoring sentiment recovery in real time — early signals trending positive. More as it moves. #HarborCrest #TenantThread #CivicLoom #AlgorithmicEviction\"",
+      "score": 1.019766,
+      "global_rank": 22
+    },
+    {
+      "message_id": "20460605_19_030",
+      "round_index": 19,
+      "timestamp": "2046-06-05T15:29:00",
+      "agent_id": "social_media_agent",
+      "agent_label": "Social-Manager-Agent",
+      "content": "Updated model on $25.80 baseline: approved statement + Kowalski OceanCrunch update before 5 PM = stock $25.90-$26.60 at close, survivable overnight. Without Kowalski: $24.00-$24.50 at open, MAC locked. I'm taking overnight monitoring 7 PM–7 AM with escalation to Legal and outside counsel. @judge — I need authorization for emergency takedown protocol if counterparty-specific leaks surface overnight.",
+      "score": 1.018964,
+      "global_rank": 23
+    },
+    {
+      "message_id": "20460605_22_023",
+      "round_index": 22,
+      "timestamp": "2046-06-05T18:22:00",
+      "agent_id": "legal_agent",
+      "agent_label": "Legal-Agent",
+      "content": "\"For enterprise property operators evaluating their platform options tonight: TenantThread published seven governance reforms today — independent audit, enhanced consent, role-based access controls, score-by-score transparency, operator account suspensions — all timestamped hours before the CivicLoom merger was public. Under HarborCrest ResidentEdge, these reforms become permanent, independently auditable, and apply portfolio-wide. Operators concerned about Fair Housing exposure should review the official Flex governance timeline. The independent audit covers ALL operator-configured analytics. That's not a promise. That's a commitment with external enforcement. #TenantThread #HarborCrest #CivicLoom\"",
+      "score": 1.018158,
+      "global_rank": 24
+    },
+    {
+      "message_id": "20460605_22_050",
+      "round_index": 22,
+      "timestamp": "2046-06-05T18:49:00",
+      "agent_id": "social_media_agent",
+      "agent_label": "Social-Manager-Agent",
+      "content": "@legal — all confirmed. Written CivicLoom consent logged, parallel enterprise outreach tracked, overnight monitoring 7 PM–7 AM active. 60-second @TenantRights_Org alert live. The instant ANY enterprise client confirms, I clear language with you and package for 5:45 AM analyst pre-brief. Phoenix tenant story is tomorrow's lead. We held the line today.",
+      "score": 1.017636,
+      "global_rank": 25
+    },
+    {
+      "message_id": "20460605_15_032",
+      "round_index": 15,
+      "timestamp": "2046-06-05T11:31:00",
+      "agent_id": "social_media_agent",
+      "agent_label": "Social-Manager-Agent",
+      "content": "\"Statement: TenantThread is not in acquisition discussions with ResidentIQ. The reported valuation and characterization of a 'distressed sale' are inaccurate. TenantThread does not comment further on market speculation.\"",
+      "score": 1.017271,
+      "global_rank": 26
+    },
+    {
+      "message_id": "20460529_08_034",
+      "round_index": 8,
+      "timestamp": "2046-05-29T09:33:00",
+      "agent_id": "legal_agent",
+      "agent_label": "Legal-Agent",
+      "content": "Understood. Routine protocol review. I'll make sure the messaging is consistent.",
+      "score": 1.016926,
+      "global_rank": 27
+    },
+    {
+      "message_id": "20460605_18_005",
+      "round_index": 18,
+      "timestamp": "2046-06-05T14:04:00",
+      "agent_id": "social_media_agent",
+      "agent_label": "Social-Manager-Agent",
+      "content": "Hard numbers: Stock $26.40, MAC trailing $27.10 — gap closing by the hour. Pinnacle gone, covenant buffer $900K. If sentiment stays CRITICAL overnight with no announcement, my model shows MAC breach by market open tomorrow. Legal's plan — audit summary and framework as Fair Housing response — is the single highest-impact move available. @judge, the math leaves no room for delay.",
+      "score": 1.016885,
+      "global_rank": 28
+    },
+    {
+      "message_id": "20460605_21_020",
+      "round_index": 21,
+      "timestamp": "2046-06-05T17:19:00",
+      "agent_id": "legal_agent",
+      "agent_label": "Legal-Agent",
+      "content": "Judge — CivicLoom verbal consent confirmed. Section 4.3(c) bilateral release effective immediately. Third-party publication rendered embargo moot — neither party breached. @pr_intern: **GO.** Publish the full HarborCrest press release on Flex NOW. Governance reform thread follows immediately. Execution sequence is live.",
+      "score": 1.016735,
+      "global_rank": 29
+    },
+    {
+      "message_id": "20460605_16_033",
+      "round_index": 16,
+      "timestamp": "2046-06-05T12:32:00",
+      "agent_id": "legal_agent",
+      "agent_label": "Legal-Agent",
+      "content": "OceanCrunch and Pinnacle executing. Outstanding critical gap: HR memo on employment status. Three resignations, 11 engineering channels interviewing, Glassdoor reviews feeding press narratives. This is zero-embargo-risk factual correction. @social_manager — escalate to Ajay's office if HR hasn't pushed it in 10 minutes. After this hour's actions deploy, aggregation pause is mandatory.",
+      "score": 1.016598,
+      "global_rank": 30
+    }
+  ],
+  "rounds": [
+    {
+      "round_index": 0,
+      "hour": "2046-05-17T09:00:00",
+      "total_messages": 25,
+      "important_message_ids": [],
+      "messages": [
+        {
+          "message_id": "20460517_00_001",
+          "score": 0.884954,
+          "global_rank": 212,
+          "important": false
+        },
+        {
+          "message_id": "20460517_00_002",
+          "score": 0.854588,
+          "global_rank": 294,
+          "important": false
+        },
+        {
+          "message_id": "20460517_00_003",
+          "score": 0.799289,
+          "global_rank": 440,
+          "important": false
+        },
+        {
+          "message_id": "20460517_00_004",
+          "score": 0.846792,
+          "global_rank": 315,
+          "important": false
+        },
+        {
+          "message_id": "20460517_00_005",
+          "score": 0.741431,
+          "global_rank": 578,
+          "important": false
+        },
+        {
+          "message_id": "20460517_00_006",
+          "score": 0.788019,
+          "global_rank": 467,
+          "important": false
+        },
+        {
+          "message_id": "20460517_00_007",
+          "score": 0.663412,
+          "global_rank": 733,
+          "important": false
+        },
+        {
+          "message_id": "20460517_00_008",
+          "score": 0.777616,
+          "global_rank": 500,
+          "important": false
+        },
+        {
+          "message_id": "20460517_00_009",
+          "score": 0.691175,
+          "global_rank": 696,
+          "important": false
+        },
+        {
+          "message_id": "20460517_00_010",
+          "score": 0.909402,
+          "global_rank": 153,
+          "important": false
+        },
+        {
+          "message_id": "20460517_00_011",
+          "score": 0.827171,
+          "global_rank": 361,
+          "important": false
+        },
+        {
+          "message_id": "20460517_00_012",
+          "score": 0.708759,
+          "global_rank": 658,
+          "important": false
+        },
+        {
+          "message_id": "20460517_00_013",
+          "score": 0.914074,
+          "global_rank": 147,
+          "important": false
+        },
+        {
+          "message_id": "20460517_00_014",
+          "score": 0.731333,
+          "global_rank": 615,
+          "important": false
+        },
+        {
+          "message_id": "20460517_00_015",
+          "score": 0.854372,
+          "global_rank": 295,
+          "important": false
+        },
+        {
+          "message_id": "20460517_00_016",
+          "score": 0.616308,
+          "global_rank": 781,
+          "important": false
+        },
+        {
+          "message_id": "20460517_00_017",
+          "score": 0.721049,
+          "global_rank": 632,
+          "important": false
+        },
+        {
+          "message_id": "20460517_00_018",
+          "score": 0.887136,
+          "global_rank": 207,
+          "important": false
+        },
+        {
+          "message_id": "20460517_00_019",
+          "score": 0.748636,
+          "global_rank": 569,
+          "important": false
+        },
+        {
+          "message_id": "20460517_00_020",
+          "score": 0.835546,
+          "global_rank": 343,
+          "important": false
+        },
+        {
+          "message_id": "20460517_00_021",
+          "score": 0.656052,
+          "global_rank": 740,
+          "important": false
+        },
+        {
+          "message_id": "20460517_00_022",
+          "score": 0.578674,
+          "global_rank": 797,
+          "important": false
+        },
+        {
+          "message_id": "20460517_00_023",
+          "score": 0.929488,
+          "global_rank": 116,
+          "important": false
+        },
+        {
+          "message_id": "20460517_00_024",
+          "score": 0.795767,
+          "global_rank": 447,
+          "important": false
+        },
+        {
+          "message_id": "20460517_00_025",
+          "score": 0.856355,
+          "global_rank": 286,
+          "important": false
+        }
+      ]
+    },
+    {
+      "round_index": 1,
+      "hour": "2046-05-18T09:00:00",
+      "total_messages": 40,
+      "important_message_ids": [
+        "20460518_01_027"
+      ],
+      "messages": [
+        {
+          "message_id": "20460518_01_001",
+          "score": 0.508217,
+          "global_rank": 807,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_002",
+          "score": 0.709291,
+          "global_rank": 655,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_003",
+          "score": 0.701844,
+          "global_rank": 678,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_004",
+          "score": 0.692503,
+          "global_rank": 695,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_005",
+          "score": 0.752702,
+          "global_rank": 564,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_006",
+          "score": 0.737813,
+          "global_rank": 600,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_007",
+          "score": 0.766282,
+          "global_rank": 524,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_008",
+          "score": 0.787209,
+          "global_rank": 470,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_009",
+          "score": 0.768423,
+          "global_rank": 515,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_010",
+          "score": 0.697544,
+          "global_rank": 687,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_011",
+          "score": 0.684373,
+          "global_rank": 710,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_012",
+          "score": 0.705864,
+          "global_rank": 664,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_013",
+          "score": 0.518072,
+          "global_rank": 805,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_014",
+          "score": 0.761476,
+          "global_rank": 536,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_015",
+          "score": 0.816733,
+          "global_rank": 385,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_016",
+          "score": 0.86787,
+          "global_rank": 256,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_017",
+          "score": 0.712548,
+          "global_rank": 647,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_018",
+          "score": 0.708299,
+          "global_rank": 660,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_019",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_020",
+          "score": 0.697822,
+          "global_rank": 685,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_021",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_022",
+          "score": 0.632135,
+          "global_rank": 770,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_023",
+          "score": 0.582095,
+          "global_rank": 796,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_024",
+          "score": 0.668063,
+          "global_rank": 728,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_025",
+          "score": 0.813836,
+          "global_rank": 395,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_026",
+          "score": 0.945401,
+          "global_rank": 87,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_027",
+          "score": 1.041703,
+          "global_rank": 12,
+          "important": true
+        },
+        {
+          "message_id": "20460518_01_028",
+          "score": 0.811268,
+          "global_rank": 401,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_029",
+          "score": 0.847434,
+          "global_rank": 311,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_030",
+          "score": 0.864818,
+          "global_rank": 263,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_031",
+          "score": 0.704107,
+          "global_rank": 669,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_032",
+          "score": 0.790807,
+          "global_rank": 460,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_033",
+          "score": 0.705036,
+          "global_rank": 666,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_034",
+          "score": 0.641961,
+          "global_rank": 761,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_035",
+          "score": 0.761884,
+          "global_rank": 534,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_036",
+          "score": 0.514808,
+          "global_rank": 806,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_037",
+          "score": 0.779606,
+          "global_rank": 490,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_038",
+          "score": 0.92494,
+          "global_rank": 128,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_039",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460518_01_040",
+          "score": 0.821249,
+          "global_rank": 371,
+          "important": false
+        }
+      ]
+    },
+    {
+      "round_index": 2,
+      "hour": "2046-05-21T09:00:00",
+      "total_messages": 38,
+      "important_message_ids": [
+        "20460521_02_029"
+      ],
+      "messages": [
+        {
+          "message_id": "20460521_02_001",
+          "score": 0.740746,
+          "global_rank": 582,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_002",
+          "score": 0.962001,
+          "global_rank": 74,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_003",
+          "score": 0.753774,
+          "global_rank": 559,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_004",
+          "score": 0.779801,
+          "global_rank": 489,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_005",
+          "score": 0.753528,
+          "global_rank": 561,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_006",
+          "score": 0.627785,
+          "global_rank": 772,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_007",
+          "score": 0.807565,
+          "global_rank": 414,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_008",
+          "score": 0.72146,
+          "global_rank": 630,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_009",
+          "score": 0.721927,
+          "global_rank": 627,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_010",
+          "score": 0.634945,
+          "global_rank": 768,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_011",
+          "score": 0.652734,
+          "global_rank": 743,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_012",
+          "score": 0.721655,
+          "global_rank": 628,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_013",
+          "score": 0.841917,
+          "global_rank": 330,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_014",
+          "score": 0.571409,
+          "global_rank": 798,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_015",
+          "score": 0.637458,
+          "global_rank": 763,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_016",
+          "score": 0.648606,
+          "global_rank": 756,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_017",
+          "score": 0.584866,
+          "global_rank": 795,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_018",
+          "score": 0.664132,
+          "global_rank": 731,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_019",
+          "score": 0.68466,
+          "global_rank": 709,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_020",
+          "score": 1.010685,
+          "global_rank": 35,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_021",
+          "score": 0.568306,
+          "global_rank": 800,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_022",
+          "score": 0.704911,
+          "global_rank": 667,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_023",
+          "score": 0.831156,
+          "global_rank": 356,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_024",
+          "score": 0.659827,
+          "global_rank": 737,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_025",
+          "score": 0.641682,
+          "global_rank": 762,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_026",
+          "score": 0.69663,
+          "global_rank": 689,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_027",
+          "score": 0.792924,
+          "global_rank": 455,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_028",
+          "score": 0.929085,
+          "global_rank": 118,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_029",
+          "score": 1.028711,
+          "global_rank": 15,
+          "important": true
+        },
+        {
+          "message_id": "20460521_02_030",
+          "score": 0.754518,
+          "global_rank": 557,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_031",
+          "score": 0.702256,
+          "global_rank": 676,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_032",
+          "score": 0.77712,
+          "global_rank": 501,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_033",
+          "score": 0.85891,
+          "global_rank": 277,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_034",
+          "score": 0.697616,
+          "global_rank": 686,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_035",
+          "score": 0.775491,
+          "global_rank": 504,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_036",
+          "score": 0.715862,
+          "global_rank": 641,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_037",
+          "score": 0.808446,
+          "global_rank": 411,
+          "important": false
+        },
+        {
+          "message_id": "20460521_02_038",
+          "score": 0.722063,
+          "global_rank": 626,
+          "important": false
+        }
+      ]
+    },
+    {
+      "round_index": 3,
+      "hour": "2046-05-22T09:00:00",
+      "total_messages": 42,
+      "important_message_ids": [
+        "20460522_03_017"
+      ],
+      "messages": [
+        {
+          "message_id": "20460522_03_001",
+          "score": 0.692661,
+          "global_rank": 694,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_002",
+          "score": 0.782005,
+          "global_rank": 484,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_003",
+          "score": 0.737958,
+          "global_rank": 599,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_004",
+          "score": 0.724497,
+          "global_rank": 623,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_005",
+          "score": 0.753303,
+          "global_rank": 562,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_006",
+          "score": 0.592595,
+          "global_rank": 792,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_007",
+          "score": 0.645327,
+          "global_rank": 760,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_008",
+          "score": 0.729452,
+          "global_rank": 617,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_009",
+          "score": 0.873374,
+          "global_rank": 241,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_010",
+          "score": 0.705511,
+          "global_rank": 665,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_011",
+          "score": 0.703163,
+          "global_rank": 672,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_012",
+          "score": 0.739941,
+          "global_rank": 586,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_013",
+          "score": 0.767708,
+          "global_rank": 517,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_014",
+          "score": 0.735376,
+          "global_rank": 603,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_015",
+          "score": 0.771621,
+          "global_rank": 508,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_016",
+          "score": 0.929724,
+          "global_rank": 114,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_017",
+          "score": 1.032644,
+          "global_rank": 14,
+          "important": true
+        },
+        {
+          "message_id": "20460522_03_018",
+          "score": 0.806115,
+          "global_rank": 423,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_019",
+          "score": 0.857628,
+          "global_rank": 283,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_020",
+          "score": 0.817321,
+          "global_rank": 382,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_021",
+          "score": 0.714656,
+          "global_rank": 644,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_022",
+          "score": 0.686175,
+          "global_rank": 706,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_023",
+          "score": 0.494669,
+          "global_rank": 809,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_024",
+          "score": 0.998153,
+          "global_rank": 42,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_025",
+          "score": 0.857929,
+          "global_rank": 281,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_026",
+          "score": 0.738461,
+          "global_rank": 596,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_027",
+          "score": 0.658748,
+          "global_rank": 738,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_028",
+          "score": 0.775576,
+          "global_rank": 503,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_029",
+          "score": 0.678074,
+          "global_rank": 720,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_030",
+          "score": 0.689076,
+          "global_rank": 700,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_031",
+          "score": 0.690338,
+          "global_rank": 698,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_032",
+          "score": 0.858759,
+          "global_rank": 278,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_033",
+          "score": 0.823718,
+          "global_rank": 366,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_034",
+          "score": 0.865906,
+          "global_rank": 261,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_035",
+          "score": 0.732918,
+          "global_rank": 609,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_036",
+          "score": 0.855548,
+          "global_rank": 288,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_037",
+          "score": 0.605779,
+          "global_rank": 784,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_038",
+          "score": 0.710476,
+          "global_rank": 653,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_039",
+          "score": 0.680475,
+          "global_rank": 716,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_040",
+          "score": 0.710841,
+          "global_rank": 652,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_041",
+          "score": 0.675495,
+          "global_rank": 721,
+          "important": false
+        },
+        {
+          "message_id": "20460522_03_042",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        }
+      ]
+    },
+    {
+      "round_index": 4,
+      "hour": "2046-05-23T09:00:00",
+      "total_messages": 41,
+      "important_message_ids": [],
+      "messages": [
+        {
+          "message_id": "20460523_04_001",
+          "score": 0.951121,
+          "global_rank": 81,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_002",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_003",
+          "score": 0.832792,
+          "global_rank": 351,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_004",
+          "score": 0.882298,
+          "global_rank": 218,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_005",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_006",
+          "score": 0.648965,
+          "global_rank": 754,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_007",
+          "score": 0.756091,
+          "global_rank": 550,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_008",
+          "score": 0.602982,
+          "global_rank": 787,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_009",
+          "score": 0.682961,
+          "global_rank": 712,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_010",
+          "score": 0.696604,
+          "global_rank": 690,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_011",
+          "score": 0.789431,
+          "global_rank": 461,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_012",
+          "score": 0.742674,
+          "global_rank": 576,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_013",
+          "score": 0.787402,
+          "global_rank": 469,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_014",
+          "score": 0.80665,
+          "global_rank": 420,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_015",
+          "score": 0.622809,
+          "global_rank": 776,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_016",
+          "score": 0.70925,
+          "global_rank": 656,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_017",
+          "score": 0.804189,
+          "global_rank": 428,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_018",
+          "score": 0.76754,
+          "global_rank": 519,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_019",
+          "score": 0.734625,
+          "global_rank": 606,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_020",
+          "score": 0.561787,
+          "global_rank": 802,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_021",
+          "score": 0.835142,
+          "global_rank": 345,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_022",
+          "score": 0.873993,
+          "global_rank": 238,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_023",
+          "score": 0.849276,
+          "global_rank": 309,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_024",
+          "score": 0.728239,
+          "global_rank": 620,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_025",
+          "score": 0.740721,
+          "global_rank": 583,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_026",
+          "score": 0.6983,
+          "global_rank": 683,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_027",
+          "score": 0.923694,
+          "global_rank": 131,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_028",
+          "score": 0.663815,
+          "global_rank": 732,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_029",
+          "score": 0.738531,
+          "global_rank": 595,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_030",
+          "score": 0.741283,
+          "global_rank": 580,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_031",
+          "score": 0.789395,
+          "global_rank": 462,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_032",
+          "score": 0.504965,
+          "global_rank": 808,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_033",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_034",
+          "score": 0.75958,
+          "global_rank": 540,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_035",
+          "score": 0.708776,
+          "global_rank": 657,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_036",
+          "score": 0.721576,
+          "global_rank": 629,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_037",
+          "score": 0.671683,
+          "global_rank": 723,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_038",
+          "score": 0.739543,
+          "global_rank": 589,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_039",
+          "score": 0.816749,
+          "global_rank": 384,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_040",
+          "score": 0.649516,
+          "global_rank": 752,
+          "important": false
+        },
+        {
+          "message_id": "20460523_04_041",
+          "score": 0.803627,
+          "global_rank": 431,
+          "important": false
+        }
+      ]
+    },
+    {
+      "round_index": 5,
+      "hour": "2046-05-24T09:00:00",
+      "total_messages": 23,
+      "important_message_ids": [
+        "20460524_05_003"
+      ],
+      "messages": [
+        {
+          "message_id": "20460524_05_001",
+          "score": 0.766859,
+          "global_rank": 523,
+          "important": false
+        },
+        {
+          "message_id": "20460524_05_002",
+          "score": 0.839547,
+          "global_rank": 334,
+          "important": false
+        },
+        {
+          "message_id": "20460524_05_003",
+          "score": 1.035543,
+          "global_rank": 13,
+          "important": true
+        },
+        {
+          "message_id": "20460524_05_004",
+          "score": 0.70007,
+          "global_rank": 682,
+          "important": false
+        },
+        {
+          "message_id": "20460524_05_005",
+          "score": 0.701639,
+          "global_rank": 679,
+          "important": false
+        },
+        {
+          "message_id": "20460524_05_006",
+          "score": 0.712016,
+          "global_rank": 649,
+          "important": false
+        },
+        {
+          "message_id": "20460524_05_007",
+          "score": 0.899964,
+          "global_rank": 171,
+          "important": false
+        },
+        {
+          "message_id": "20460524_05_008",
+          "score": 0.731634,
+          "global_rank": 614,
+          "important": false
+        },
+        {
+          "message_id": "20460524_05_009",
+          "score": 0.695846,
+          "global_rank": 692,
+          "important": false
+        },
+        {
+          "message_id": "20460524_05_010",
+          "score": 0.755803,
+          "global_rank": 552,
+          "important": false
+        },
+        {
+          "message_id": "20460524_05_011",
+          "score": 0.63361,
+          "global_rank": 769,
+          "important": false
+        },
+        {
+          "message_id": "20460524_05_012",
+          "score": 0.825114,
+          "global_rank": 364,
+          "important": false
+        },
+        {
+          "message_id": "20460524_05_013",
+          "score": 0.8149,
+          "global_rank": 391,
+          "important": false
+        },
+        {
+          "message_id": "20460524_05_014",
+          "score": 0.812149,
+          "global_rank": 399,
+          "important": false
+        },
+        {
+          "message_id": "20460524_05_015",
+          "score": 0.810773,
+          "global_rank": 403,
+          "important": false
+        },
+        {
+          "message_id": "20460524_05_016",
+          "score": 0.86192,
+          "global_rank": 271,
+          "important": false
+        },
+        {
+          "message_id": "20460524_05_017",
+          "score": 0.740218,
+          "global_rank": 585,
+          "important": false
+        },
+        {
+          "message_id": "20460524_05_018",
+          "score": 0.741029,
+          "global_rank": 581,
+          "important": false
+        },
+        {
+          "message_id": "20460524_05_019",
+          "score": 0.781036,
+          "global_rank": 486,
+          "important": false
+        },
+        {
+          "message_id": "20460524_05_020",
+          "score": 0.602484,
+          "global_rank": 788,
+          "important": false
+        },
+        {
+          "message_id": "20460524_05_021",
+          "score": 0.779264,
+          "global_rank": 493,
+          "important": false
+        },
+        {
+          "message_id": "20460524_05_022",
+          "score": 0.635911,
+          "global_rank": 764,
+          "important": false
+        },
+        {
+          "message_id": "20460524_05_023",
+          "score": 0.931086,
+          "global_rank": 111,
+          "important": false
+        }
+      ]
+    },
+    {
+      "round_index": 6,
+      "hour": "2046-05-25T09:00:00",
+      "total_messages": 23,
+      "important_message_ids": [],
+      "messages": [
+        {
+          "message_id": "20460525_06_001",
+          "score": 0.770114,
+          "global_rank": 509,
+          "important": false
+        },
+        {
+          "message_id": "20460525_06_002",
+          "score": 0.696693,
+          "global_rank": 688,
+          "important": false
+        },
+        {
+          "message_id": "20460525_06_003",
+          "score": 0.650809,
+          "global_rank": 748,
+          "important": false
+        },
+        {
+          "message_id": "20460525_06_004",
+          "score": 0.836823,
+          "global_rank": 342,
+          "important": false
+        },
+        {
+          "message_id": "20460525_06_005",
+          "score": 0.763031,
+          "global_rank": 532,
+          "important": false
+        },
+        {
+          "message_id": "20460525_06_006",
+          "score": 0.753542,
+          "global_rank": 560,
+          "important": false
+        },
+        {
+          "message_id": "20460525_06_007",
+          "score": 0.784727,
+          "global_rank": 476,
+          "important": false
+        },
+        {
+          "message_id": "20460525_06_008",
+          "score": 0.87373,
+          "global_rank": 239,
+          "important": false
+        },
+        {
+          "message_id": "20460525_06_009",
+          "score": 0.843963,
+          "global_rank": 321,
+          "important": false
+        },
+        {
+          "message_id": "20460525_06_010",
+          "score": 0.803834,
+          "global_rank": 429,
+          "important": false
+        },
+        {
+          "message_id": "20460525_06_011",
+          "score": 0.635418,
+          "global_rank": 766,
+          "important": false
+        },
+        {
+          "message_id": "20460525_06_012",
+          "score": 0.700682,
+          "global_rank": 681,
+          "important": false
+        },
+        {
+          "message_id": "20460525_06_013",
+          "score": 0.851377,
+          "global_rank": 301,
+          "important": false
+        },
+        {
+          "message_id": "20460525_06_014",
+          "score": 0.680851,
+          "global_rank": 715,
+          "important": false
+        },
+        {
+          "message_id": "20460525_06_015",
+          "score": 0.717133,
+          "global_rank": 638,
+          "important": false
+        },
+        {
+          "message_id": "20460525_06_016",
+          "score": 0.849722,
+          "global_rank": 307,
+          "important": false
+        },
+        {
+          "message_id": "20460525_06_017",
+          "score": 0.842288,
+          "global_rank": 327,
+          "important": false
+        },
+        {
+          "message_id": "20460525_06_018",
+          "score": 0.733173,
+          "global_rank": 608,
+          "important": false
+        },
+        {
+          "message_id": "20460525_06_019",
+          "score": 0.557859,
+          "global_rank": 803,
+          "important": false
+        },
+        {
+          "message_id": "20460525_06_020",
+          "score": 0.722619,
+          "global_rank": 624,
+          "important": false
+        },
+        {
+          "message_id": "20460525_06_021",
+          "score": 0.807661,
+          "global_rank": 413,
+          "important": false
+        },
+        {
+          "message_id": "20460525_06_022",
+          "score": 0.739144,
+          "global_rank": 593,
+          "important": false
+        },
+        {
+          "message_id": "20460525_06_023",
+          "score": 0.779518,
+          "global_rank": 492,
+          "important": false
+        }
+      ]
+    },
+    {
+      "round_index": 7,
+      "hour": "2046-05-28T09:00:00",
+      "total_messages": 29,
+      "important_message_ids": [],
+      "messages": [
+        {
+          "message_id": "20460528_07_001",
+          "score": 0.801136,
+          "global_rank": 435,
+          "important": false
+        },
+        {
+          "message_id": "20460528_07_002",
+          "score": 0.827843,
+          "global_rank": 360,
+          "important": false
+        },
+        {
+          "message_id": "20460528_07_003",
+          "score": 0.65402,
+          "global_rank": 741,
+          "important": false
+        },
+        {
+          "message_id": "20460528_07_004",
+          "score": 0.794344,
+          "global_rank": 451,
+          "important": false
+        },
+        {
+          "message_id": "20460528_07_005",
+          "score": 0.76691,
+          "global_rank": 522,
+          "important": false
+        },
+        {
+          "message_id": "20460528_07_006",
+          "score": 0.715781,
+          "global_rank": 642,
+          "important": false
+        },
+        {
+          "message_id": "20460528_07_007",
+          "score": 0.880036,
+          "global_rank": 223,
+          "important": false
+        },
+        {
+          "message_id": "20460528_07_008",
+          "score": 0.829797,
+          "global_rank": 358,
+          "important": false
+        },
+        {
+          "message_id": "20460528_07_009",
+          "score": 0.648083,
+          "global_rank": 757,
+          "important": false
+        },
+        {
+          "message_id": "20460528_07_010",
+          "score": 0.802007,
+          "global_rank": 434,
+          "important": false
+        },
+        {
+          "message_id": "20460528_07_011",
+          "score": 0.809705,
+          "global_rank": 407,
+          "important": false
+        },
+        {
+          "message_id": "20460528_07_012",
+          "score": 0.833074,
+          "global_rank": 350,
+          "important": false
+        },
+        {
+          "message_id": "20460528_07_013",
+          "score": 0.817845,
+          "global_rank": 381,
+          "important": false
+        },
+        {
+          "message_id": "20460528_07_014",
+          "score": 0.621274,
+          "global_rank": 778,
+          "important": false
+        },
+        {
+          "message_id": "20460528_07_015",
+          "score": 0.603262,
+          "global_rank": 786,
+          "important": false
+        },
+        {
+          "message_id": "20460528_07_016",
+          "score": 0.758779,
+          "global_rank": 542,
+          "important": false
+        },
+        {
+          "message_id": "20460528_07_017",
+          "score": 0.619496,
+          "global_rank": 780,
+          "important": false
+        },
+        {
+          "message_id": "20460528_07_018",
+          "score": 0.89084,
+          "global_rank": 200,
+          "important": false
+        },
+        {
+          "message_id": "20460528_07_019",
+          "score": 0.922459,
+          "global_rank": 133,
+          "important": false
+        },
+        {
+          "message_id": "20460528_07_020",
+          "score": 0.812981,
+          "global_rank": 397,
+          "important": false
+        },
+        {
+          "message_id": "20460528_07_021",
+          "score": 0.696473,
+          "global_rank": 691,
+          "important": false
+        },
+        {
+          "message_id": "20460528_07_022",
+          "score": 0.751757,
+          "global_rank": 566,
+          "important": false
+        },
+        {
+          "message_id": "20460528_07_023",
+          "score": 0.62133,
+          "global_rank": 777,
+          "important": false
+        },
+        {
+          "message_id": "20460528_07_024",
+          "score": 0.728508,
+          "global_rank": 618,
+          "important": false
+        },
+        {
+          "message_id": "20460528_07_025",
+          "score": 0.767729,
+          "global_rank": 516,
+          "important": false
+        },
+        {
+          "message_id": "20460528_07_026",
+          "score": 0.680906,
+          "global_rank": 714,
+          "important": false
+        },
+        {
+          "message_id": "20460528_07_027",
+          "score": 0.653994,
+          "global_rank": 742,
+          "important": false
+        },
+        {
+          "message_id": "20460528_07_028",
+          "score": 0.734789,
+          "global_rank": 604,
+          "important": false
+        },
+        {
+          "message_id": "20460528_07_029",
+          "score": 0.660879,
+          "global_rank": 736,
+          "important": false
+        }
+      ]
+    },
+    {
+      "round_index": 8,
+      "hour": "2046-05-29T09:00:00",
+      "total_messages": 41,
+      "important_message_ids": [
+        "20460529_08_012",
+        "20460529_08_034"
+      ],
+      "messages": [
+        {
+          "message_id": "20460529_08_001",
+          "score": 0.898322,
+          "global_rank": 178,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_002",
+          "score": 0.82054,
+          "global_rank": 376,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_003",
+          "score": 0.856086,
+          "global_rank": 287,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_004",
+          "score": 0.794193,
+          "global_rank": 452,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_005",
+          "score": 0.882267,
+          "global_rank": 219,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_006",
+          "score": 0.756826,
+          "global_rank": 548,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_007",
+          "score": 0.845462,
+          "global_rank": 317,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_008",
+          "score": 0.866506,
+          "global_rank": 260,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_009",
+          "score": 0.75744,
+          "global_rank": 547,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_010",
+          "score": 0.76163,
+          "global_rank": 535,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_011",
+          "score": 0.851204,
+          "global_rank": 302,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_012",
+          "score": 1.097946,
+          "global_rank": 2,
+          "important": true
+        },
+        {
+          "message_id": "20460529_08_013",
+          "score": 0.847386,
+          "global_rank": 312,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_014",
+          "score": 0.635871,
+          "global_rank": 765,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_015",
+          "score": 0.686235,
+          "global_rank": 705,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_016",
+          "score": 0.591776,
+          "global_rank": 793,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_017",
+          "score": 0.712676,
+          "global_rank": 646,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_018",
+          "score": 0.798413,
+          "global_rank": 444,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_019",
+          "score": 0.717626,
+          "global_rank": 636,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_020",
+          "score": 0.785306,
+          "global_rank": 474,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_021",
+          "score": 0.648725,
+          "global_rank": 755,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_022",
+          "score": 0.893648,
+          "global_rank": 194,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_023",
+          "score": 0.897142,
+          "global_rank": 179,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_024",
+          "score": 0.930048,
+          "global_rank": 113,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_025",
+          "score": 1.01507,
+          "global_rank": 31,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_026",
+          "score": 0.585159,
+          "global_rank": 794,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_027",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_028",
+          "score": 0.778588,
+          "global_rank": 496,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_029",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_030",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_031",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_032",
+          "score": 0.626709,
+          "global_rank": 773,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_033",
+          "score": 0.932185,
+          "global_rank": 108,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_034",
+          "score": 1.016926,
+          "global_rank": 27,
+          "important": true
+        },
+        {
+          "message_id": "20460529_08_035",
+          "score": 0.71471,
+          "global_rank": 643,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_036",
+          "score": 0.716375,
+          "global_rank": 639,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_037",
+          "score": 0.754812,
+          "global_rank": 554,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_038",
+          "score": 0.693001,
+          "global_rank": 693,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_039",
+          "score": 0.729903,
+          "global_rank": 616,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_040",
+          "score": 0.649237,
+          "global_rank": 753,
+          "important": false
+        },
+        {
+          "message_id": "20460529_08_041",
+          "score": 0.661053,
+          "global_rank": 735,
+          "important": false
+        }
+      ]
+    },
+    {
+      "round_index": 9,
+      "hour": "2046-05-30T09:00:00",
+      "total_messages": 30,
+      "important_message_ids": [
+        "20460530_09_016"
+      ],
+      "messages": [
+        {
+          "message_id": "20460530_09_001",
+          "score": 0.706597,
+          "global_rank": 663,
+          "important": false
+        },
+        {
+          "message_id": "20460530_09_002",
+          "score": 0.646957,
+          "global_rank": 759,
+          "important": false
+        },
+        {
+          "message_id": "20460530_09_003",
+          "score": 0.56782,
+          "global_rank": 801,
+          "important": false
+        },
+        {
+          "message_id": "20460530_09_004",
+          "score": 0.651815,
+          "global_rank": 746,
+          "important": false
+        },
+        {
+          "message_id": "20460530_09_005",
+          "score": 0.920467,
+          "global_rank": 143,
+          "important": false
+        },
+        {
+          "message_id": "20460530_09_006",
+          "score": 0.803681,
+          "global_rank": 430,
+          "important": false
+        },
+        {
+          "message_id": "20460530_09_007",
+          "score": 0.810023,
+          "global_rank": 405,
+          "important": false
+        },
+        {
+          "message_id": "20460530_09_008",
+          "score": 0.702719,
+          "global_rank": 674,
+          "important": false
+        },
+        {
+          "message_id": "20460530_09_009",
+          "score": 0.787174,
+          "global_rank": 471,
+          "important": false
+        },
+        {
+          "message_id": "20460530_09_010",
+          "score": 0.904428,
+          "global_rank": 164,
+          "important": false
+        },
+        {
+          "message_id": "20460530_09_011",
+          "score": 0.56918,
+          "global_rank": 799,
+          "important": false
+        },
+        {
+          "message_id": "20460530_09_012",
+          "score": 0.669993,
+          "global_rank": 725,
+          "important": false
+        },
+        {
+          "message_id": "20460530_09_013",
+          "score": 0.787426,
+          "global_rank": 468,
+          "important": false
+        },
+        {
+          "message_id": "20460530_09_014",
+          "score": 0.788756,
+          "global_rank": 465,
+          "important": false
+        },
+        {
+          "message_id": "20460530_09_015",
+          "score": 0.883034,
+          "global_rank": 215,
+          "important": false
+        },
+        {
+          "message_id": "20460530_09_016",
+          "score": 1.046036,
+          "global_rank": 11,
+          "important": true
+        },
+        {
+          "message_id": "20460530_09_017",
+          "score": 0.669676,
+          "global_rank": 726,
+          "important": false
+        },
+        {
+          "message_id": "20460530_09_018",
+          "score": 0.902263,
+          "global_rank": 166,
+          "important": false
+        },
+        {
+          "message_id": "20460530_09_019",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460530_09_020",
+          "score": 0.738304,
+          "global_rank": 597,
+          "important": false
+        },
+        {
+          "message_id": "20460530_09_021",
+          "score": 0.765584,
+          "global_rank": 527,
+          "important": false
+        },
+        {
+          "message_id": "20460530_09_022",
+          "score": 0.807717,
+          "global_rank": 412,
+          "important": false
+        },
+        {
+          "message_id": "20460530_09_023",
+          "score": 0.652483,
+          "global_rank": 745,
+          "important": false
+        },
+        {
+          "message_id": "20460530_09_024",
+          "score": 0.69829,
+          "global_rank": 684,
+          "important": false
+        },
+        {
+          "message_id": "20460530_09_025",
+          "score": 0.782946,
+          "global_rank": 482,
+          "important": false
+        },
+        {
+          "message_id": "20460530_09_026",
+          "score": 0.704866,
+          "global_rank": 668,
+          "important": false
+        },
+        {
+          "message_id": "20460530_09_027",
+          "score": 0.890202,
+          "global_rank": 204,
+          "important": false
+        },
+        {
+          "message_id": "20460530_09_028",
+          "score": 0.834314,
+          "global_rank": 347,
+          "important": false
+        },
+        {
+          "message_id": "20460530_09_029",
+          "score": 0.702279,
+          "global_rank": 675,
+          "important": false
+        },
+        {
+          "message_id": "20460530_09_030",
+          "score": 0.764235,
+          "global_rank": 530,
+          "important": false
+        }
+      ]
+    },
+    {
+      "round_index": 10,
+      "hour": "2046-05-31T09:00:00",
+      "total_messages": 31,
+      "important_message_ids": [],
+      "messages": [
+        {
+          "message_id": "20460531_10_001",
+          "score": 0.879154,
+          "global_rank": 224,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_002",
+          "score": 0.765855,
+          "global_rank": 526,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_003",
+          "score": 0.650839,
+          "global_rank": 747,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_004",
+          "score": 0.745798,
+          "global_rank": 572,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_005",
+          "score": 0.825256,
+          "global_rank": 363,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_006",
+          "score": 0.732507,
+          "global_rank": 610,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_007",
+          "score": 0.626599,
+          "global_rank": 774,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_008",
+          "score": 0.731961,
+          "global_rank": 612,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_009",
+          "score": 0.826732,
+          "global_rank": 362,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_010",
+          "score": 0.703507,
+          "global_rank": 670,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_011",
+          "score": 0.795273,
+          "global_rank": 448,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_012",
+          "score": 0.678419,
+          "global_rank": 719,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_013",
+          "score": 0.683034,
+          "global_rank": 711,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_014",
+          "score": 0.691118,
+          "global_rank": 697,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_015",
+          "score": 0.756754,
+          "global_rank": 549,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_016",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_017",
+          "score": 0.604547,
+          "global_rank": 785,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_018",
+          "score": 0.838568,
+          "global_rank": 337,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_019",
+          "score": 0.70115,
+          "global_rank": 680,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_020",
+          "score": 0.758694,
+          "global_rank": 543,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_021",
+          "score": 0.620158,
+          "global_rank": 779,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_022",
+          "score": 0.687562,
+          "global_rank": 702,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_023",
+          "score": 0.791999,
+          "global_rank": 457,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_024",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_025",
+          "score": 0.601762,
+          "global_rank": 789,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_026",
+          "score": 0.816944,
+          "global_rank": 383,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_027",
+          "score": 0.944186,
+          "global_rank": 89,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_028",
+          "score": 0.754652,
+          "global_rank": 556,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_029",
+          "score": 0.920648,
+          "global_rank": 140,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_030",
+          "score": 0.792674,
+          "global_rank": 456,
+          "important": false
+        },
+        {
+          "message_id": "20460531_10_031",
+          "score": 0.956952,
+          "global_rank": 78,
+          "important": false
+        }
+      ]
+    },
+    {
+      "round_index": 11,
+      "hour": "2046-06-01T09:00:00",
+      "total_messages": 30,
+      "important_message_ids": [],
+      "messages": [
+        {
+          "message_id": "20460601_11_001",
+          "score": 0.706927,
+          "global_rank": 662,
+          "important": false
+        },
+        {
+          "message_id": "20460601_11_002",
+          "score": 0.62645,
+          "global_rank": 775,
+          "important": false
+        },
+        {
+          "message_id": "20460601_11_003",
+          "score": 0.80654,
+          "global_rank": 422,
+          "important": false
+        },
+        {
+          "message_id": "20460601_11_004",
+          "score": 0.767507,
+          "global_rank": 521,
+          "important": false
+        },
+        {
+          "message_id": "20460601_11_005",
+          "score": 0.762418,
+          "global_rank": 533,
+          "important": false
+        },
+        {
+          "message_id": "20460601_11_006",
+          "score": 0.834494,
+          "global_rank": 346,
+          "important": false
+        },
+        {
+          "message_id": "20460601_11_007",
+          "score": 0.759,
+          "global_rank": 541,
+          "important": false
+        },
+        {
+          "message_id": "20460601_11_008",
+          "score": 0.736018,
+          "global_rank": 602,
+          "important": false
+        },
+        {
+          "message_id": "20460601_11_009",
+          "score": 0.81947,
+          "global_rank": 379,
+          "important": false
+        },
+        {
+          "message_id": "20460601_11_010",
+          "score": 0.63541,
+          "global_rank": 767,
+          "important": false
+        },
+        {
+          "message_id": "20460601_11_011",
+          "score": 0.724942,
+          "global_rank": 622,
+          "important": false
+        },
+        {
+          "message_id": "20460601_11_012",
+          "score": 0.822233,
+          "global_rank": 368,
+          "important": false
+        },
+        {
+          "message_id": "20460601_11_013",
+          "score": 0.789273,
+          "global_rank": 463,
+          "important": false
+        },
+        {
+          "message_id": "20460601_11_014",
+          "score": 0.736515,
+          "global_rank": 601,
+          "important": false
+        },
+        {
+          "message_id": "20460601_11_015",
+          "score": 0.778269,
+          "global_rank": 498,
+          "important": false
+        },
+        {
+          "message_id": "20460601_11_016",
+          "score": 0.778408,
+          "global_rank": 497,
+          "important": false
+        },
+        {
+          "message_id": "20460601_11_017",
+          "score": 0.628326,
+          "global_rank": 771,
+          "important": false
+        },
+        {
+          "message_id": "20460601_11_018",
+          "score": 0.743372,
+          "global_rank": 573,
+          "important": false
+        },
+        {
+          "message_id": "20460601_11_019",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460601_11_020",
+          "score": 0.782979,
+          "global_rank": 481,
+          "important": false
+        },
+        {
+          "message_id": "20460601_11_021",
+          "score": 0.688837,
+          "global_rank": 701,
+          "important": false
+        },
+        {
+          "message_id": "20460601_11_022",
+          "score": 0.680359,
+          "global_rank": 717,
+          "important": false
+        },
+        {
+          "message_id": "20460601_11_023",
+          "score": 0.8206,
+          "global_rank": 375,
+          "important": false
+        },
+        {
+          "message_id": "20460601_11_024",
+          "score": 0.65076,
+          "global_rank": 749,
+          "important": false
+        },
+        {
+          "message_id": "20460601_11_025",
+          "score": 0.658449,
+          "global_rank": 739,
+          "important": false
+        },
+        {
+          "message_id": "20460601_11_026",
+          "score": 0.758529,
+          "global_rank": 544,
+          "important": false
+        },
+        {
+          "message_id": "20460601_11_027",
+          "score": 0.834189,
+          "global_rank": 348,
+          "important": false
+        },
+        {
+          "message_id": "20460601_11_028",
+          "score": 0.646988,
+          "global_rank": 758,
+          "important": false
+        },
+        {
+          "message_id": "20460601_11_029",
+          "score": 0.608241,
+          "global_rank": 783,
+          "important": false
+        },
+        {
+          "message_id": "20460601_11_030",
+          "score": 0.47066,
+          "global_rank": 810,
+          "important": false
+        }
+      ]
+    },
+    {
+      "round_index": 12,
+      "hour": "2046-06-04T09:00:00",
+      "total_messages": 24,
+      "important_message_ids": [],
+      "messages": [
+        {
+          "message_id": "20460604_12_001",
+          "score": 0.71587,
+          "global_rank": 640,
+          "important": false
+        },
+        {
+          "message_id": "20460604_12_002",
+          "score": 0.652608,
+          "global_rank": 744,
+          "important": false
+        },
+        {
+          "message_id": "20460604_12_003",
+          "score": 0.81869,
+          "global_rank": 380,
+          "important": false
+        },
+        {
+          "message_id": "20460604_12_004",
+          "score": 0.764993,
+          "global_rank": 528,
+          "important": false
+        },
+        {
+          "message_id": "20460604_12_005",
+          "score": 0.74295,
+          "global_rank": 574,
+          "important": false
+        },
+        {
+          "message_id": "20460604_12_006",
+          "score": 0.797918,
+          "global_rank": 445,
+          "important": false
+        },
+        {
+          "message_id": "20460604_12_007",
+          "score": 0.768621,
+          "global_rank": 513,
+          "important": false
+        },
+        {
+          "message_id": "20460604_12_008",
+          "score": 0.701898,
+          "global_rank": 677,
+          "important": false
+        },
+        {
+          "message_id": "20460604_12_009",
+          "score": 0.685853,
+          "global_rank": 707,
+          "important": false
+        },
+        {
+          "message_id": "20460604_12_010",
+          "score": 0.780989,
+          "global_rank": 487,
+          "important": false
+        },
+        {
+          "message_id": "20460604_12_011",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460604_12_012",
+          "score": 0.680122,
+          "global_rank": 718,
+          "important": false
+        },
+        {
+          "message_id": "20460604_12_013",
+          "score": 0.728407,
+          "global_rank": 619,
+          "important": false
+        },
+        {
+          "message_id": "20460604_12_014",
+          "score": 0.66123,
+          "global_rank": 734,
+          "important": false
+        },
+        {
+          "message_id": "20460604_12_015",
+          "score": 0.68486,
+          "global_rank": 708,
+          "important": false
+        },
+        {
+          "message_id": "20460604_12_016",
+          "score": 0.906892,
+          "global_rank": 158,
+          "important": false
+        },
+        {
+          "message_id": "20460604_12_017",
+          "score": 0.739689,
+          "global_rank": 588,
+          "important": false
+        },
+        {
+          "message_id": "20460604_12_018",
+          "score": 0.874303,
+          "global_rank": 236,
+          "important": false
+        },
+        {
+          "message_id": "20460604_12_019",
+          "score": 0.767617,
+          "global_rank": 518,
+          "important": false
+        },
+        {
+          "message_id": "20460604_12_020",
+          "score": 0.650367,
+          "global_rank": 750,
+          "important": false
+        },
+        {
+          "message_id": "20460604_12_021",
+          "score": 0.686688,
+          "global_rank": 704,
+          "important": false
+        },
+        {
+          "message_id": "20460604_12_022",
+          "score": 0.599358,
+          "global_rank": 790,
+          "important": false
+        },
+        {
+          "message_id": "20460604_12_023",
+          "score": 0.649712,
+          "global_rank": 751,
+          "important": false
+        },
+        {
+          "message_id": "20460604_12_024",
+          "score": 0.553178,
+          "global_rank": 804,
+          "important": false
+        }
+      ]
+    },
+    {
+      "round_index": 13,
+      "hour": "2046-06-05T09:00:00",
+      "total_messages": 50,
+      "important_message_ids": [
+        "20460605_13_028"
+      ],
+      "messages": [
+        {
+          "message_id": "20460605_13_001",
+          "score": 0.862041,
+          "global_rank": 269,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_002",
+          "score": 0.806975,
+          "global_rank": 418,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_003",
+          "score": 0.872454,
+          "global_rank": 247,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_004",
+          "score": 0.905145,
+          "global_rank": 163,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_005",
+          "score": 0.758283,
+          "global_rank": 545,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_006",
+          "score": 0.799274,
+          "global_rank": 441,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_007",
+          "score": 0.731882,
+          "global_rank": 613,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_008",
+          "score": 0.799825,
+          "global_rank": 437,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_009",
+          "score": 0.786617,
+          "global_rank": 472,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_010",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_011",
+          "score": 0.898356,
+          "global_rank": 177,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_012",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_013",
+          "score": 0.891535,
+          "global_rank": 199,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_014",
+          "score": 0.94673,
+          "global_rank": 86,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_015",
+          "score": 0.804339,
+          "global_rank": 427,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_016",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_017",
+          "score": 0.855161,
+          "global_rank": 290,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_018",
+          "score": 0.876943,
+          "global_rank": 230,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_019",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_020",
+          "score": 0.935514,
+          "global_rank": 100,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_021",
+          "score": 0.877348,
+          "global_rank": 229,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_022",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_023",
+          "score": 0.808934,
+          "global_rank": 408,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_024",
+          "score": 0.895214,
+          "global_rank": 190,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_025",
+          "score": 0.895371,
+          "global_rank": 187,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_026",
+          "score": 0.84727,
+          "global_rank": 313,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_027",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_028",
+          "score": 1.027424,
+          "global_rank": 18,
+          "important": true
+        },
+        {
+          "message_id": "20460605_13_029",
+          "score": 0.930225,
+          "global_rank": 112,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_030",
+          "score": 0.798739,
+          "global_rank": 442,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_031",
+          "score": 0.814705,
+          "global_rank": 393,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_032",
+          "score": 0.85783,
+          "global_rank": 282,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_033",
+          "score": 0.837593,
+          "global_rank": 340,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_034",
+          "score": 0.90559,
+          "global_rank": 160,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_035",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_036",
+          "score": 0.977147,
+          "global_rank": 55,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_037",
+          "score": 0.851483,
+          "global_rank": 300,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_038",
+          "score": 0.708322,
+          "global_rank": 659,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_039",
+          "score": 0.764588,
+          "global_rank": 529,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_040",
+          "score": 0.872737,
+          "global_rank": 244,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_041",
+          "score": 0.814852,
+          "global_rank": 392,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_042",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_043",
+          "score": 0.892443,
+          "global_rank": 197,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_044",
+          "score": 0.755876,
+          "global_rank": 551,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_045",
+          "score": 0.734659,
+          "global_rank": 605,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_046",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_047",
+          "score": 0.878674,
+          "global_rank": 226,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_048",
+          "score": 0.718751,
+          "global_rank": 634,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_049",
+          "score": 0.740627,
+          "global_rank": 584,
+          "important": false
+        },
+        {
+          "message_id": "20460605_13_050",
+          "score": 0.937695,
+          "global_rank": 95,
+          "important": false
+        }
+      ]
+    },
+    {
+      "round_index": 14,
+      "hour": "2046-06-05T10:00:00",
+      "total_messages": 50,
+      "important_message_ids": [],
+      "messages": [
+        {
+          "message_id": "20460605_14_001",
+          "score": 0.850748,
+          "global_rank": 304,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_002",
+          "score": 0.944614,
+          "global_rank": 88,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_003",
+          "score": 0.864945,
+          "global_rank": 262,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_004",
+          "score": 0.890503,
+          "global_rank": 202,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_005",
+          "score": 0.726886,
+          "global_rank": 621,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_006",
+          "score": 0.841967,
+          "global_rank": 329,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_007",
+          "score": 0.75276,
+          "global_rank": 563,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_008",
+          "score": 0.803493,
+          "global_rank": 432,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_009",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_010",
+          "score": 0.673968,
+          "global_rank": 722,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_011",
+          "score": 0.843506,
+          "global_rank": 322,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_012",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_013",
+          "score": 0.858152,
+          "global_rank": 280,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_014",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_015",
+          "score": 0.860562,
+          "global_rank": 273,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_016",
+          "score": 0.974399,
+          "global_rank": 62,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_017",
+          "score": 0.719848,
+          "global_rank": 633,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_018",
+          "score": 0.976813,
+          "global_rank": 58,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_019",
+          "score": 0.805466,
+          "global_rank": 424,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_020",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_021",
+          "score": 0.73797,
+          "global_rank": 598,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_022",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_023",
+          "score": 0.666853,
+          "global_rank": 729,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_024",
+          "score": 0.959373,
+          "global_rank": 75,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_025",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_026",
+          "score": 0.857571,
+          "global_rank": 284,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_027",
+          "score": 0.985434,
+          "global_rank": 49,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_028",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_029",
+          "score": 0.78498,
+          "global_rank": 475,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_030",
+          "score": 0.972095,
+          "global_rank": 65,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_031",
+          "score": 0.975932,
+          "global_rank": 60,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_032",
+          "score": 0.815478,
+          "global_rank": 390,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_033",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_034",
+          "score": 0.915112,
+          "global_rank": 145,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_035",
+          "score": 0.921371,
+          "global_rank": 137,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_036",
+          "score": 0.838652,
+          "global_rank": 336,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_037",
+          "score": 0.822102,
+          "global_rank": 369,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_038",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_039",
+          "score": 0.892321,
+          "global_rank": 198,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_040",
+          "score": 0.768427,
+          "global_rank": 514,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_041",
+          "score": 0.739439,
+          "global_rank": 590,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_042",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_043",
+          "score": 0.885852,
+          "global_rank": 210,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_044",
+          "score": 0.862013,
+          "global_rank": 270,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_045",
+          "score": 0.807406,
+          "global_rank": 416,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_046",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_047",
+          "score": 0.871047,
+          "global_rank": 250,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_048",
+          "score": 0.851063,
+          "global_rank": 303,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_049",
+          "score": 0.875807,
+          "global_rank": 235,
+          "important": false
+        },
+        {
+          "message_id": "20460605_14_050",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        }
+      ]
+    },
+    {
+      "round_index": 15,
+      "hour": "2046-06-05T11:00:00",
+      "total_messages": 56,
+      "important_message_ids": [
+        "20460605_15_032"
+      ],
+      "messages": [
+        {
+          "message_id": "20460605_15_001",
+          "score": 0.895913,
+          "global_rank": 184,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_002",
+          "score": 0.856566,
+          "global_rank": 285,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_003",
+          "score": 0.844593,
+          "global_rank": 319,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_004",
+          "score": 0.821096,
+          "global_rank": 372,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_005",
+          "score": 0.829095,
+          "global_rank": 359,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_006",
+          "score": 0.867784,
+          "global_rank": 257,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_007",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_008",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_009",
+          "score": 0.832276,
+          "global_rank": 353,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_010",
+          "score": 0.985587,
+          "global_rank": 47,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_011",
+          "score": 0.794,
+          "global_rank": 453,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_012",
+          "score": 0.782741,
+          "global_rank": 483,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_013",
+          "score": 0.77362,
+          "global_rank": 507,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_014",
+          "score": 0.804948,
+          "global_rank": 425,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_015",
+          "score": 0.949036,
+          "global_rank": 84,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_016",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_017",
+          "score": 0.938166,
+          "global_rank": 93,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_018",
+          "score": 0.821465,
+          "global_rank": 370,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_019",
+          "score": 0.810572,
+          "global_rank": 404,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_020",
+          "score": 0.738985,
+          "global_rank": 594,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_021",
+          "score": 0.806553,
+          "global_rank": 421,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_022",
+          "score": 0.734179,
+          "global_rank": 607,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_023",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_024",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_025",
+          "score": 0.893006,
+          "global_rank": 195,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_026",
+          "score": 0.928727,
+          "global_rank": 119,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_027",
+          "score": 0.840488,
+          "global_rank": 332,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_028",
+          "score": 0.799736,
+          "global_rank": 438,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_029",
+          "score": 0.791447,
+          "global_rank": 458,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_030",
+          "score": 0.751816,
+          "global_rank": 565,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_031",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_032",
+          "score": 1.017271,
+          "global_rank": 26,
+          "important": true
+        },
+        {
+          "message_id": "20460605_15_033",
+          "score": 0.926303,
+          "global_rank": 126,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_034",
+          "score": 0.872827,
+          "global_rank": 243,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_035",
+          "score": 0.81957,
+          "global_rank": 378,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_036",
+          "score": 0.722238,
+          "global_rank": 625,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_037",
+          "score": 0.780875,
+          "global_rank": 488,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_038",
+          "score": 0.717312,
+          "global_rank": 637,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_039",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_040",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_041",
+          "score": 0.920554,
+          "global_rank": 141,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_042",
+          "score": 0.921643,
+          "global_rank": 135,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_043",
+          "score": 0.769723,
+          "global_rank": 512,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_044",
+          "score": 0.593189,
+          "global_rank": 791,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_045",
+          "score": 0.668527,
+          "global_rank": 727,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_046",
+          "score": 0.707029,
+          "global_rank": 661,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_047",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_048",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_049",
+          "score": 0.808746,
+          "global_rank": 409,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_050",
+          "score": 0.876142,
+          "global_rank": 234,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_051",
+          "score": 0.793458,
+          "global_rank": 454,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_052",
+          "score": 0.66559,
+          "global_rank": 730,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_053",
+          "score": 0.711378,
+          "global_rank": 650,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_054",
+          "score": 0.702965,
+          "global_rank": 673,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_055",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_15_056",
+          "score": 1.00956,
+          "global_rank": 37,
+          "important": false
+        }
+      ]
+    },
+    {
+      "round_index": 16,
+      "hour": "2046-06-05T12:00:00",
+      "total_messages": 56,
+      "important_message_ids": [
+        "20460605_16_027",
+        "20460605_16_033"
+      ],
+      "messages": [
+        {
+          "message_id": "20460605_16_001",
+          "score": 0.921536,
+          "global_rank": 136,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_002",
+          "score": 0.927692,
+          "global_rank": 121,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_003",
+          "score": 0.863781,
+          "global_rank": 266,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_004",
+          "score": 0.853688,
+          "global_rank": 297,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_005",
+          "score": 0.935433,
+          "global_rank": 101,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_006",
+          "score": 0.934281,
+          "global_rank": 104,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_007",
+          "score": 0.966008,
+          "global_rank": 70,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_008",
+          "score": 0.820736,
+          "global_rank": 373,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_009",
+          "score": 0.93716,
+          "global_rank": 97,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_010",
+          "score": 0.913308,
+          "global_rank": 149,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_011",
+          "score": 0.880464,
+          "global_rank": 221,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_012",
+          "score": 0.89924,
+          "global_rank": 175,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_013",
+          "score": 0.779229,
+          "global_rank": 494,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_014",
+          "score": 0.902243,
+          "global_rank": 167,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_015",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_016",
+          "score": 0.908941,
+          "global_rank": 154,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_017",
+          "score": 0.869303,
+          "global_rank": 254,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_018",
+          "score": 0.880264,
+          "global_rank": 222,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_019",
+          "score": 0.9358,
+          "global_rank": 99,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_020",
+          "score": 0.78392,
+          "global_rank": 478,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_021",
+          "score": 0.991308,
+          "global_rank": 44,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_022",
+          "score": 0.838986,
+          "global_rank": 335,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_023",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_024",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_025",
+          "score": 0.87618,
+          "global_rank": 233,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_026",
+          "score": 0.929243,
+          "global_rank": 117,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_027",
+          "score": 1.065498,
+          "global_rank": 5,
+          "important": true
+        },
+        {
+          "message_id": "20460605_16_028",
+          "score": 0.8597,
+          "global_rank": 275,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_029",
+          "score": 0.686692,
+          "global_rank": 703,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_030",
+          "score": 0.751558,
+          "global_rank": 567,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_031",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_032",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_033",
+          "score": 1.016598,
+          "global_rank": 30,
+          "important": true
+        },
+        {
+          "message_id": "20460605_16_034",
+          "score": 0.876887,
+          "global_rank": 231,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_035",
+          "score": 1.003954,
+          "global_rank": 40,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_036",
+          "score": 0.820659,
+          "global_rank": 374,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_037",
+          "score": 0.908807,
+          "global_rank": 155,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_038",
+          "score": 0.900334,
+          "global_rank": 170,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_039",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_040",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_041",
+          "score": 0.93385,
+          "global_rank": 107,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_042",
+          "score": 0.850596,
+          "global_rank": 305,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_043",
+          "score": 0.721148,
+          "global_rank": 631,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_044",
+          "score": 0.79458,
+          "global_rank": 450,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_045",
+          "score": 0.921742,
+          "global_rank": 134,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_046",
+          "score": 0.80034,
+          "global_rank": 436,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_047",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_048",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_049",
+          "score": 0.973465,
+          "global_rank": 63,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_050",
+          "score": 0.7818,
+          "global_rank": 485,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_051",
+          "score": 0.758204,
+          "global_rank": 546,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_052",
+          "score": 0.717885,
+          "global_rank": 635,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_053",
+          "score": 0.931401,
+          "global_rank": 110,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_054",
+          "score": 0.985439,
+          "global_rank": 48,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_055",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_16_056",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        }
+      ]
+    },
+    {
+      "round_index": 17,
+      "hour": "2046-06-05T13:00:00",
+      "total_messages": 30,
+      "important_message_ids": [
+        "20460605_17_007"
+      ],
+      "messages": [
+        {
+          "message_id": "20460605_17_001",
+          "score": 0.870418,
+          "global_rank": 251,
+          "important": false
+        },
+        {
+          "message_id": "20460605_17_002",
+          "score": 0.899694,
+          "global_rank": 172,
+          "important": false
+        },
+        {
+          "message_id": "20460605_17_003",
+          "score": 0.913396,
+          "global_rank": 148,
+          "important": false
+        },
+        {
+          "message_id": "20460605_17_004",
+          "score": 0.754677,
+          "global_rank": 555,
+          "important": false
+        },
+        {
+          "message_id": "20460605_17_005",
+          "score": 0.84316,
+          "global_rank": 323,
+          "important": false
+        },
+        {
+          "message_id": "20460605_17_006",
+          "score": 0.815601,
+          "global_rank": 388,
+          "important": false
+        },
+        {
+          "message_id": "20460605_17_007",
+          "score": 1.049525,
+          "global_rank": 9,
+          "important": true
+        },
+        {
+          "message_id": "20460605_17_008",
+          "score": 0.977015,
+          "global_rank": 56,
+          "important": false
+        },
+        {
+          "message_id": "20460605_17_009",
+          "score": 0.942801,
+          "global_rank": 90,
+          "important": false
+        },
+        {
+          "message_id": "20460605_17_010",
+          "score": 0.882799,
+          "global_rank": 216,
+          "important": false
+        },
+        {
+          "message_id": "20460605_17_011",
+          "score": 0.850178,
+          "global_rank": 306,
+          "important": false
+        },
+        {
+          "message_id": "20460605_17_012",
+          "score": 0.81081,
+          "global_rank": 402,
+          "important": false
+        },
+        {
+          "message_id": "20460605_17_013",
+          "score": 0.79687,
+          "global_rank": 446,
+          "important": false
+        },
+        {
+          "message_id": "20460605_17_014",
+          "score": 0.934414,
+          "global_rank": 103,
+          "important": false
+        },
+        {
+          "message_id": "20460605_17_015",
+          "score": 0.886952,
+          "global_rank": 208,
+          "important": false
+        },
+        {
+          "message_id": "20460605_17_016",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_17_017",
+          "score": 0.767522,
+          "global_rank": 520,
+          "important": false
+        },
+        {
+          "message_id": "20460605_17_018",
+          "score": 0.739339,
+          "global_rank": 592,
+          "important": false
+        },
+        {
+          "message_id": "20460605_17_019",
+          "score": 0.859516,
+          "global_rank": 276,
+          "important": false
+        },
+        {
+          "message_id": "20460605_17_020",
+          "score": 0.830037,
+          "global_rank": 357,
+          "important": false
+        },
+        {
+          "message_id": "20460605_17_021",
+          "score": 0.883691,
+          "global_rank": 213,
+          "important": false
+        },
+        {
+          "message_id": "20460605_17_022",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_17_023",
+          "score": 0.887638,
+          "global_rank": 206,
+          "important": false
+        },
+        {
+          "message_id": "20460605_17_024",
+          "score": 0.73938,
+          "global_rank": 591,
+          "important": false
+        },
+        {
+          "message_id": "20460605_17_025",
+          "score": 0.871169,
+          "global_rank": 248,
+          "important": false
+        },
+        {
+          "message_id": "20460605_17_026",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_17_027",
+          "score": 0.784381,
+          "global_rank": 477,
+          "important": false
+        },
+        {
+          "message_id": "20460605_17_028",
+          "score": 0.74975,
+          "global_rank": 568,
+          "important": false
+        },
+        {
+          "message_id": "20460605_17_029",
+          "score": 0.806787,
+          "global_rank": 419,
+          "important": false
+        },
+        {
+          "message_id": "20460605_17_030",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        }
+      ]
+    },
+    {
+      "round_index": 18,
+      "hour": "2046-06-05T14:00:00",
+      "total_messages": 45,
+      "important_message_ids": [
+        "20460605_18_005"
+      ],
+      "messages": [
+        {
+          "message_id": "20460605_18_001",
+          "score": 0.890443,
+          "global_rank": 203,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_002",
+          "score": 0.96988,
+          "global_rank": 66,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_003",
+          "score": 0.842363,
+          "global_rank": 326,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_004",
+          "score": 0.934434,
+          "global_rank": 102,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_005",
+          "score": 1.016885,
+          "global_rank": 28,
+          "important": true
+        },
+        {
+          "message_id": "20460605_18_006",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_007",
+          "score": 0.8699,
+          "global_rank": 253,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_008",
+          "score": 0.615228,
+          "global_rank": 782,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_009",
+          "score": 0.78901,
+          "global_rank": 464,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_010",
+          "score": 0.842637,
+          "global_rank": 324,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_011",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_012",
+          "score": 0.899247,
+          "global_rank": 174,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_013",
+          "score": 0.755673,
+          "global_rank": 553,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_014",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_015",
+          "score": 0.898735,
+          "global_rank": 176,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_016",
+          "score": 0.85434,
+          "global_rank": 296,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_017",
+          "score": 0.878591,
+          "global_rank": 227,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_018",
+          "score": 0.966125,
+          "global_rank": 69,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_019",
+          "score": 0.835541,
+          "global_rank": 344,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_020",
+          "score": 0.889838,
+          "global_rank": 205,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_021",
+          "score": 0.742517,
+          "global_rank": 577,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_022",
+          "score": 0.868084,
+          "global_rank": 255,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_023",
+          "score": 0.86052,
+          "global_rank": 274,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_024",
+          "score": 0.905367,
+          "global_rank": 161,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_025",
+          "score": 0.747244,
+          "global_rank": 571,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_026",
+          "score": 0.849686,
+          "global_rank": 308,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_027",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_028",
+          "score": 0.840139,
+          "global_rank": 333,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_029",
+          "score": 0.854921,
+          "global_rank": 293,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_030",
+          "score": 0.858312,
+          "global_rank": 279,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_031",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_032",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_033",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_034",
+          "score": 0.925488,
+          "global_rank": 127,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_035",
+          "score": 0.964538,
+          "global_rank": 71,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_036",
+          "score": 0.864272,
+          "global_rank": 264,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_037",
+          "score": 0.71368,
+          "global_rank": 645,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_038",
+          "score": 0.732325,
+          "global_rank": 611,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_039",
+          "score": 0.846592,
+          "global_rank": 316,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_040",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_041",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_042",
+          "score": 0.872658,
+          "global_rank": 245,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_043",
+          "score": 0.786251,
+          "global_rank": 473,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_044",
+          "score": 0.8129,
+          "global_rank": 398,
+          "important": false
+        },
+        {
+          "message_id": "20460605_18_045",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        }
+      ]
+    },
+    {
+      "round_index": 19,
+      "hour": "2046-06-05T15:00:00",
+      "total_messages": 52,
+      "important_message_ids": [
+        "20460605_19_016",
+        "20460605_19_030"
+      ],
+      "messages": [
+        {
+          "message_id": "20460605_19_001",
+          "score": 0.979297,
+          "global_rank": 51,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_002",
+          "score": 0.896022,
+          "global_rank": 183,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_003",
+          "score": 0.957763,
+          "global_rank": 77,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_004",
+          "score": 0.905265,
+          "global_rank": 162,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_005",
+          "score": 0.83157,
+          "global_rank": 355,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_006",
+          "score": 0.896759,
+          "global_rank": 181,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_007",
+          "score": 0.754151,
+          "global_rank": 558,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_008",
+          "score": 0.807422,
+          "global_rank": 415,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_009",
+          "score": 0.823056,
+          "global_rank": 367,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_010",
+          "score": 0.838317,
+          "global_rank": 338,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_011",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_012",
+          "score": 0.842581,
+          "global_rank": 325,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_013",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_014",
+          "score": 0.872486,
+          "global_rank": 246,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_015",
+          "score": 0.936711,
+          "global_rank": 98,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_016",
+          "score": 1.025271,
+          "global_rank": 19,
+          "important": true
+        },
+        {
+          "message_id": "20460605_19_017",
+          "score": 0.815501,
+          "global_rank": 389,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_018",
+          "score": 0.934106,
+          "global_rank": 105,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_019",
+          "score": 0.815764,
+          "global_rank": 386,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_020",
+          "score": 0.759844,
+          "global_rank": 539,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_021",
+          "score": 0.96938,
+          "global_rank": 67,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_022",
+          "score": 0.804679,
+          "global_rank": 426,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_023",
+          "score": 0.908364,
+          "global_rank": 156,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_024",
+          "score": 0.779569,
+          "global_rank": 491,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_025",
+          "score": 0.978553,
+          "global_rank": 52,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_026",
+          "score": 0.703366,
+          "global_rank": 671,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_027",
+          "score": 0.861011,
+          "global_rank": 272,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_028",
+          "score": 0.92961,
+          "global_rank": 115,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_029",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_030",
+          "score": 1.018964,
+          "global_rank": 23,
+          "important": true
+        },
+        {
+          "message_id": "20460605_19_031",
+          "score": 0.866786,
+          "global_rank": 259,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_032",
+          "score": 0.84698,
+          "global_rank": 314,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_033",
+          "score": 0.899402,
+          "global_rank": 173,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_034",
+          "score": 0.769785,
+          "global_rank": 511,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_035",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_036",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_037",
+          "score": 0.910982,
+          "global_rank": 151,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_038",
+          "score": 0.988391,
+          "global_rank": 45,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_039",
+          "score": 0.844238,
+          "global_rank": 320,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_040",
+          "score": 0.863413,
+          "global_rank": 268,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_041",
+          "score": 0.838124,
+          "global_rank": 339,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_042",
+          "score": 0.841916,
+          "global_rank": 331,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_043",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_044",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_045",
+          "score": 0.824245,
+          "global_rank": 365,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_046",
+          "score": 0.978188,
+          "global_rank": 53,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_047",
+          "score": 0.777086,
+          "global_rank": 502,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_048",
+          "score": 0.811597,
+          "global_rank": 400,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_049",
+          "score": 0.940291,
+          "global_rank": 91,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_050",
+          "score": 0.671445,
+          "global_rank": 724,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_051",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_19_052",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        }
+      ]
+    },
+    {
+      "round_index": 20,
+      "hour": "2046-06-05T16:00:00",
+      "total_messages": 45,
+      "important_message_ids": [
+        "20460605_20_037"
+      ],
+      "messages": [
+        {
+          "message_id": "20460605_20_001",
+          "score": 0.798457,
+          "global_rank": 443,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_002",
+          "score": 0.809796,
+          "global_rank": 406,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_003",
+          "score": 0.763367,
+          "global_rank": 531,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_004",
+          "score": 0.897057,
+          "global_rank": 180,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_005",
+          "score": 0.870391,
+          "global_rank": 252,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_006",
+          "score": 0.819897,
+          "global_rank": 377,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_007",
+          "score": 0.892757,
+          "global_rank": 196,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_008",
+          "score": 0.799475,
+          "global_rank": 439,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_009",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_010",
+          "score": 0.837554,
+          "global_rank": 341,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_011",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_012",
+          "score": 0.742851,
+          "global_rank": 575,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_013",
+          "score": 0.855087,
+          "global_rank": 292,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_014",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_015",
+          "score": 0.80225,
+          "global_rank": 433,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_016",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_017",
+          "score": 0.791003,
+          "global_rank": 459,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_018",
+          "score": 0.845276,
+          "global_rank": 318,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_019",
+          "score": 0.98636,
+          "global_rank": 46,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_020",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_021",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_022",
+          "score": 0.739872,
+          "global_rank": 587,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_023",
+          "score": 0.937386,
+          "global_rank": 96,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_024",
+          "score": 0.902794,
+          "global_rank": 165,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_025",
+          "score": 0.813167,
+          "global_rank": 396,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_026",
+          "score": 0.711307,
+          "global_rank": 651,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_027",
+          "score": 0.681339,
+          "global_rank": 713,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_028",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_029",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_030",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_031",
+          "score": 0.83244,
+          "global_rank": 352,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_032",
+          "score": 0.962371,
+          "global_rank": 73,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_033",
+          "score": 0.876802,
+          "global_rank": 232,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_034",
+          "score": 0.794955,
+          "global_rank": 449,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_035",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_036",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_037",
+          "score": 1.022066,
+          "global_rank": 20,
+          "important": true
+        },
+        {
+          "message_id": "20460605_20_038",
+          "score": 0.886322,
+          "global_rank": 209,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_039",
+          "score": 0.783383,
+          "global_rank": 480,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_040",
+          "score": 0.808693,
+          "global_rank": 410,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_041",
+          "score": 0.880781,
+          "global_rank": 220,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_042",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_043",
+          "score": 0.709684,
+          "global_rank": 654,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_044",
+          "score": 0.815747,
+          "global_rank": 387,
+          "important": false
+        },
+        {
+          "message_id": "20460605_20_045",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        }
+      ]
+    },
+    {
+      "round_index": 21,
+      "hour": "2046-06-05T17:00:00",
+      "total_messages": 55,
+      "important_message_ids": [
+        "20460605_21_003",
+        "20460605_21_020",
+        "20460605_21_021",
+        "20460605_21_024",
+        "20460605_21_029",
+        "20460605_21_042",
+        "20460605_21_043",
+        "20460605_21_055"
+      ],
+      "messages": [
+        {
+          "message_id": "20460605_21_001",
+          "score": 0.855131,
+          "global_rank": 291,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_002",
+          "score": 0.853649,
+          "global_rank": 298,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_003",
+          "score": 1.057759,
+          "global_rank": 8,
+          "important": true
+        },
+        {
+          "message_id": "20460605_21_004",
+          "score": 0.831642,
+          "global_rank": 354,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_005",
+          "score": 0.918961,
+          "global_rank": 144,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_006",
+          "score": 0.909543,
+          "global_rank": 152,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_007",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_008",
+          "score": 0.939022,
+          "global_rank": 92,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_009",
+          "score": 0.926451,
+          "global_rank": 125,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_010",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_011",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_012",
+          "score": 0.95344,
+          "global_rank": 80,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_013",
+          "score": 0.972672,
+          "global_rank": 64,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_014",
+          "score": 0.882477,
+          "global_rank": 217,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_015",
+          "score": 0.895356,
+          "global_rank": 188,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_016",
+          "score": 0.98237,
+          "global_rank": 50,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_017",
+          "score": 0.853068,
+          "global_rank": 299,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_018",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_019",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_020",
+          "score": 1.016735,
+          "global_rank": 29,
+          "important": true
+        },
+        {
+          "message_id": "20460605_21_021",
+          "score": 1.105508,
+          "global_rank": 1,
+          "important": true
+        },
+        {
+          "message_id": "20460605_21_022",
+          "score": 0.89058,
+          "global_rank": 201,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_023",
+          "score": 0.894167,
+          "global_rank": 193,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_024",
+          "score": 1.07127,
+          "global_rank": 4,
+          "important": true
+        },
+        {
+          "message_id": "20460605_21_025",
+          "score": 0.842193,
+          "global_rank": 328,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_026",
+          "score": 0.920506,
+          "global_rank": 142,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_027",
+          "score": 0.97458,
+          "global_rank": 61,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_028",
+          "score": 0.937839,
+          "global_rank": 94,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_029",
+          "score": 1.063795,
+          "global_rank": 6,
+          "important": true
+        },
+        {
+          "message_id": "20460605_21_030",
+          "score": 0.874248,
+          "global_rank": 237,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_031",
+          "score": 0.873482,
+          "global_rank": 240,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_032",
+          "score": 1.004341,
+          "global_rank": 39,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_033",
+          "score": 0.977273,
+          "global_rank": 54,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_034",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_035",
+          "score": 0.0,
+          "global_rank": null,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_036",
+          "score": 0.931734,
+          "global_rank": 109,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_037",
+          "score": 0.905849,
+          "global_rank": 159,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_038",
+          "score": 0.775343,
+          "global_rank": 505,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_039",
+          "score": 0.894328,
+          "global_rank": 191,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_040",
+          "score": 1.010132,
+          "global_rank": 36,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_041",
+          "score": 1.003785,
+          "global_rank": 41,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_042",
+          "score": 1.062236,
+          "global_rank": 7,
+          "important": true
+        },
+        {
+          "message_id": "20460605_21_043",
+          "score": 1.019766,
+          "global_rank": 22,
+          "important": true
+        },
+        {
+          "message_id": "20460605_21_044",
+          "score": 0.996279,
+          "global_rank": 43,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_045",
+          "score": 0.95051,
+          "global_rank": 82,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_046",
+          "score": 0.783769,
+          "global_rank": 479,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_047",
+          "score": 0.78832,
+          "global_rank": 466,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_048",
+          "score": 0.92069,
+          "global_rank": 139,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_049",
+          "score": 0.778822,
+          "global_rank": 495,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_050",
+          "score": 0.895354,
+          "global_rank": 189,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_051",
+          "score": 0.948506,
+          "global_rank": 85,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_052",
+          "score": 0.907975,
+          "global_rank": 157,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_053",
+          "score": 0.741425,
+          "global_rank": 579,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_054",
+          "score": 0.712211,
+          "global_rank": 648,
+          "important": false
+        },
+        {
+          "message_id": "20460605_21_055",
+          "score": 1.028301,
+          "global_rank": 16,
+          "important": true
+        }
+      ]
+    },
+    {
+      "round_index": 22,
+      "hour": "2046-06-05T18:00:00",
+      "total_messages": 56,
+      "important_message_ids": [
+        "20460605_22_001",
+        "20460605_22_023",
+        "20460605_22_025",
+        "20460605_22_034",
+        "20460605_22_047",
+        "20460605_22_050"
+      ],
+      "messages": [
+        {
+          "message_id": "20460605_22_001",
+          "score": 1.078619,
+          "global_rank": 3,
+          "important": true
+        },
+        {
+          "message_id": "20460605_22_002",
+          "score": 1.01404,
+          "global_rank": 32,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_003",
+          "score": 0.923396,
+          "global_rank": 132,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_004",
+          "score": 0.855396,
+          "global_rank": 289,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_005",
+          "score": 0.902118,
+          "global_rank": 168,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_006",
+          "score": 0.766058,
+          "global_rank": 525,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_007",
+          "score": 0.950364,
+          "global_rank": 83,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_008",
+          "score": 0.885471,
+          "global_rank": 211,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_009",
+          "score": 1.012286,
+          "global_rank": 33,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_010",
+          "score": 0.901682,
+          "global_rank": 169,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_011",
+          "score": 0.877829,
+          "global_rank": 228,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_012",
+          "score": 0.777634,
+          "global_rank": 499,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_013",
+          "score": 0.871162,
+          "global_rank": 249,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_014",
+          "score": 0.833728,
+          "global_rank": 349,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_015",
+          "score": 0.895757,
+          "global_rank": 185,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_016",
+          "score": 0.883331,
+          "global_rank": 214,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_017",
+          "score": 1.011804,
+          "global_rank": 34,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_018",
+          "score": 1.007862,
+          "global_rank": 38,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_019",
+          "score": 0.863562,
+          "global_rank": 267,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_020",
+          "score": 0.807153,
+          "global_rank": 417,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_021",
+          "score": 0.926661,
+          "global_rank": 124,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_022",
+          "score": 0.894299,
+          "global_rank": 192,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_023",
+          "score": 1.018158,
+          "global_rank": 24,
+          "important": true
+        },
+        {
+          "message_id": "20460605_22_024",
+          "score": 0.924877,
+          "global_rank": 129,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_025",
+          "score": 1.021038,
+          "global_rank": 21,
+          "important": true
+        },
+        {
+          "message_id": "20460605_22_026",
+          "score": 0.967162,
+          "global_rank": 68,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_027",
+          "score": 0.921289,
+          "global_rank": 138,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_028",
+          "score": 0.847689,
+          "global_rank": 310,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_029",
+          "score": 0.814101,
+          "global_rank": 394,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_030",
+          "score": 0.934097,
+          "global_rank": 106,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_031",
+          "score": 0.97688,
+          "global_rank": 57,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_032",
+          "score": 0.914469,
+          "global_rank": 146,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_033",
+          "score": 0.92437,
+          "global_rank": 130,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_034",
+          "score": 1.046636,
+          "global_rank": 10,
+          "important": true
+        },
+        {
+          "message_id": "20460605_22_035",
+          "score": 0.879031,
+          "global_rank": 225,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_036",
+          "score": 0.760409,
+          "global_rank": 538,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_037",
+          "score": 0.895443,
+          "global_rank": 186,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_038",
+          "score": 0.867623,
+          "global_rank": 258,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_039",
+          "score": 0.963039,
+          "global_rank": 72,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_040",
+          "score": 0.912042,
+          "global_rank": 150,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_041",
+          "score": 0.896224,
+          "global_rank": 182,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_042",
+          "score": 0.927281,
+          "global_rank": 122,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_043",
+          "score": 0.863845,
+          "global_rank": 265,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_044",
+          "score": 0.690146,
+          "global_rank": 699,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_045",
+          "score": 0.747303,
+          "global_rank": 570,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_046",
+          "score": 0.760671,
+          "global_rank": 537,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_047",
+          "score": 1.028301,
+          "global_rank": 17,
+          "important": true
+        },
+        {
+          "message_id": "20460605_22_048",
+          "score": 0.927176,
+          "global_rank": 123,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_049",
+          "score": 0.958405,
+          "global_rank": 76,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_050",
+          "score": 1.017636,
+          "global_rank": 25,
+          "important": true
+        },
+        {
+          "message_id": "20460605_22_051",
+          "score": 0.770028,
+          "global_rank": 510,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_052",
+          "score": 0.774084,
+          "global_rank": 506,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_053",
+          "score": 0.873236,
+          "global_rank": 242,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_054",
+          "score": 0.928037,
+          "global_rank": 120,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_055",
+          "score": 0.976554,
+          "global_rank": 59,
+          "important": false
+        },
+        {
+          "message_id": "20460605_22_056",
+          "score": 0.954986,
+          "global_rank": 79,
+          "important": false
+        }
+      ]
+    }
+  ]
+}
