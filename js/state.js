@@ -2,6 +2,7 @@ window.VastApp = window.VastApp || {};
 
 window.VastApp.state = {
   roundIndex: 0,
+  highlightedRoundIndex: 0,
   selectedMessageId: null,
   replyTargets: new Map()
 };

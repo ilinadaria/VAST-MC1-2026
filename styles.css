@@ -1554,3 +1554,57 @@ h2 {
 .stock-price-round-label {
   pointer-events: none;
 }
+
+/* Shared selected-round highlight */
+
+.overall-round-column.selected-round {
+  background: rgba(45, 91, 255, 0.07);
+  box-shadow: inset 0 -3px 0 var(--accent);
+}
+
+.overall-round-column.selected-round .overall-round-label {
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.overall-round-column.selected-round .overall-bar-total {
+  color: var(--accent);
+}
+
+.overall-round-column.embargo-round.selected-round {
+  background: rgba(220, 38, 38, 0.07);
+  box-shadow: inset 0 -3px 0 #dc2626;
+}
+
+.overall-round-column.embargo-round.selected-round .overall-round-label,
+.overall-round-column.embargo-round.selected-round .overall-bar-total {
+  color: #dc2626;
+}
+
+.stock-sentiment-band.selected-round {
+  opacity: 0.42;
+  stroke: var(--accent);
+  stroke-width: 2;
+}
+
+.internal-state-cell.selected-round {
+  box-shadow:
+    0 0 0 2px #fff,
+    0 0 0 4px var(--accent);
+  transform: scale(1.08);
+}
+
+.internal-state-cell.selected-round:hover {
+  transform: scale(1.45);
+}
+
+.internal-state-round-label.selected-round {
+  background: rgba(45, 91, 255, 0.09);
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.internal-state-round-label.embargo-round-label.selected-round {
+  background: rgba(220, 38, 38, 0.08);
+  color: #dc2626;
+}

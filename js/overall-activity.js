@@ -172,6 +172,7 @@ window.VastApp.overallActivity = {
         ? "overall-round-column embargo-round"
         : "overall-round-column";
     column.tabIndex = 0;
+    column.dataset.roundIndex = String(round.index);
     column.setAttribute("role", "button");
     column.setAttribute(
       "aria-label",
@@ -282,30 +283,24 @@ window.VastApp.overallActivity = {
 
 
   selectRound(roundIndex) {
-    const app = window.VastApp;
-    const round =
-      window.VAST_DATA?.rounds?.[roundIndex];
+    window.VastApp.roundSelection.select(
+      roundIndex,
+      { scrollToTimeline: true }
+    );
+  },
 
-    if (!round) {
-      return;
-    }
-
-    app.state.roundIndex = roundIndex;
-    app.state.selectedMessageId = null;
-    app.state.replyTargets = new Map();
-
-    if (app.elements.roundSelect) {
-      app.elements.roundSelect.value =
-        String(roundIndex);
-    }
-
-    app.details.render(null);
-    app.app.renderRound();
-
-    app.elements.timeline?.scrollIntoView({
-      behavior: "smooth",
-      block: "nearest"
-    });
+  updateSelection(roundIndex) {
+    document
+      .querySelectorAll(
+        "#overallActivityCharts .overall-round-column"
+      )
+      .forEach(column => {
+        column.classList.toggle(
+          "selected-round",
+          roundIndex !== null &&
+          Number(column.dataset.roundIndex) === roundIndex
+        );
+      });
   },
 
   ensureTooltip() {

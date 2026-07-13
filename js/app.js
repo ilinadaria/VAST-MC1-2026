@@ -47,12 +47,13 @@ window.VastApp.app = {
     app.elements.roundSelect.addEventListener(
       "change",
       event => {
-        app.state.roundIndex = Number(event.target.value);
-        app.state.selectedMessageId = null;
-        app.state.replyTargets = new Map();
-
-        app.details.render(null);
-        this.renderRound();
+        app.roundSelection.select(
+          Number(event.target.value),
+          {
+            toggle: false,
+            scrollToTimeline: false
+          }
+        );
       }
     );
 
@@ -73,8 +74,8 @@ window.VastApp.app = {
 
     app.timelineRenderer.render(round);
     app.controls.renderRoundInfo(round);
-    app.stockPriceChart?.updateSelection(
-      app.state.roundIndex
+    app.roundSelection?.updateHighlights(
+      app.state.highlightedRoundIndex
     );
     app.agentActivity?.render(app.state.roundIndex);
   }

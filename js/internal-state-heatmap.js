@@ -241,6 +241,8 @@ window.VastApp.internalStateHeatmap = {
       "button";
     label.className =
       "internal-state-round-label";
+    label.dataset.roundIndex =
+      String(roundIndex);
     label.textContent =
       `R${roundIndex + 1}`;
 
@@ -370,6 +372,8 @@ window.VastApp.internalStateHeatmap = {
       "button";
     cell.className =
       `internal-state-cell state-${cellData.dominantState}`;
+    cell.dataset.roundIndex =
+      String(cellData.roundIndex);
 
     cell.setAttribute(
       "aria-label",
@@ -448,35 +452,36 @@ window.VastApp.internalStateHeatmap = {
     roundIndex,
     scrollToTimeline = true
   ) {
-    const app = window.VastApp;
-    const round =
-      window.VAST_DATA?.rounds?.[roundIndex];
+    window.VastApp.roundSelection.select(
+      roundIndex,
+      { scrollToTimeline }
+    );
+  },
 
-    if (!round) {
-      return;
-    }
-
-    app.state.roundIndex =
-      roundIndex;
-    app.state.selectedMessageId =
-      null;
-    app.state.replyTargets =
-      new Map();
-
-    if (app.elements.roundSelect) {
-      app.elements.roundSelect.value =
-        String(roundIndex);
-    }
-
-    app.details.render(null);
-    app.app.renderRound();
-
-    if (scrollToTimeline) {
-      app.elements.timeline?.scrollIntoView({
-        behavior: "smooth",
-        block: "nearest"
+  updateSelection(roundIndex) {
+    document
+      .querySelectorAll(
+        "#internalStateHeatmap .internal-state-cell"
+      )
+      .forEach(cell => {
+        cell.classList.toggle(
+          "selected-round",
+          roundIndex !== null &&
+          Number(cell.dataset.roundIndex) === roundIndex
+        );
       });
-    }
+
+    document
+      .querySelectorAll(
+        "#internalStateHeatmap .internal-state-round-label"
+      )
+      .forEach(label => {
+        label.classList.toggle(
+          "selected-round",
+          roundIndex !== null &&
+          Number(label.dataset.roundIndex) === roundIndex
+        );
+      });
   },
 
   ensureTooltip() {

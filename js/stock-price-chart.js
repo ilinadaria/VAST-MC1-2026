@@ -359,21 +359,13 @@ window.VastApp.stockPriceChart = {
     });
 
     this.container.replaceChildren(svg);
-    this.updateSelection(app.state.roundIndex);
+    this.updateSelection(app.state.highlightedRoundIndex);
   },
 
   selectRound(roundIndex) {
-    const app = window.VastApp;
-
-    app.state.roundIndex = roundIndex;
-    app.elements.roundSelect.value =
-      String(roundIndex);
-
-    app.state.selectedMessageId = null;
-    app.state.replyTargets = new Map();
-
-    app.details.render(null);
-    app.app.renderRound();
+    window.VastApp.roundSelection.select(
+      roundIndex
+    );
   },
 
   updateSelection(roundIndex) {
@@ -382,6 +374,7 @@ window.VastApp.stockPriceChart = {
       .forEach(point => {
         point.classList.toggle(
           "selected-round",
+          roundIndex !== null &&
           Number(point.dataset.roundIndex) === roundIndex
         );
       });

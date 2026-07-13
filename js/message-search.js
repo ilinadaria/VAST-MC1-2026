@@ -28,6 +28,11 @@ window.VastApp.messageSearch = {
         "messageSearchCount"
       );
 
+    if (this.input) {
+      this.input.placeholder =
+        "Search exact words or message ID";
+    }
+
     if (
       !this.input ||
       !this.searchButton ||
@@ -105,9 +110,6 @@ window.VastApp.messageSearch = {
   },
 
   findAllMatches(query) {
-    const normalizedQuery =
-      query.toLocaleLowerCase();
-
     const matches = [];
 
     (
@@ -119,10 +121,21 @@ window.VastApp.messageSearch = {
         const content =
           String(message.content || "");
 
+        const messageId =
+          String(message.message_id || "");
+
+        const matchesContent =
+          this.containsWholePhrase(
+            content,
+            query
+          );
+
+        const matchesMessageId =
+          messageId === query;
+
         if (
-          content
-            .toLocaleLowerCase()
-            .includes(normalizedQuery)
+          matchesContent ||
+          matchesMessageId
         ) {
           matches.push({
             roundIndex,
@@ -146,6 +159,59 @@ window.VastApp.messageSearch = {
         b.roundIndex
       );
     });
+  },
+
+  containsWholePhrase(text, query) {
+    if (!query) {
+      return false;
+    }
+
+    let startIndex =
+      text.indexOf(query);
+
+    while (startIndex !== -1) {
+      const before =
+        startIndex > 0
+          ? text[startIndex - 1]
+          : "";
+
+      const endIndex =
+        startIndex + query.length;
+
+      const after =
+        endIndex < text.length
+          ? text[endIndex]
+          : "";
+
+      const startsAtBoundary =
+        !before ||
+        !this.isWordCharacter(before);
+
+      const endsAtBoundary =
+        !after ||
+        !this.isWordCharacter(after);
+
+      if (
+        startsAtBoundary &&
+        endsAtBoundary
+      ) {
+        return true;
+      }
+
+      startIndex =
+        text.indexOf(
+          query,
+          startIndex + 1
+        );
+    }
+
+    return false;
+  },
+
+  isWordCharacter(character) {
+    return /[\\p{L}\\p{N}_]/u.test(
+      character
+    );
   },
 
   move(direction) {
@@ -181,6 +247,8 @@ window.VastApp.messageSearch = {
       result.roundIndex
     ) {
       app.state.roundIndex =
+        result.roundIndex;
+      app.state.highlightedRoundIndex =
         result.roundIndex;
 
       app.elements.roundSelect.value =
