@@ -20,7 +20,7 @@ window.VastApp.details = {
       charts.hidden = false;
 
       if (heading) {
-        heading.textContent = "Agent activity";
+        heading.textContent = "Round overview";
       }
 
       return;

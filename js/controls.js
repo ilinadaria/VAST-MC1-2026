@@ -157,5 +157,183 @@ window.VastApp.controls = {
       changeGroup,
       sentimentGroup
     );
+
+    this.renderRoundOverview(round);
   },
+
+  renderRoundOverview(round) {
+    const element =
+      document.getElementById(
+        "roundOverviewInfo"
+      );
+
+    if (!element) {
+      return;
+    }
+
+    const context =
+      round.environment_context || {};
+
+    const market =
+      context.market_snapshot || {};
+
+    const sentiment =
+      String(
+        market.sentiment || "unknown"
+      ).toLowerCase();
+
+    const sentimentSymbols = {
+      neutral: "😐",
+      cautious: "😬",
+      negative: "📉",
+      critical: "🚨",
+      recovering: "📈",
+      low: "😌",
+      unknown: "❓"
+    };
+
+    const sections = [
+      {
+        label: "Media events",
+        value: context.media_events
+      },
+      {
+        label: "Social state",
+        value: context.social_state
+      },
+      {
+        label: "External actor actions",
+        value: context.external_actor_actions
+      },
+      {
+        label: "Social Manager alerts",
+        value: context.social_manager_alerts
+      },
+      {
+        label: "Critical events",
+        value:
+          context.critical_events ||
+          context.critical_deadlines
+      },
+      {
+        label: "News",
+        value: context.news
+      }
+    ];
+
+    element.replaceChildren(
+      ...sections.map(section =>
+        this.createRoundOverviewCard(
+          section.label,
+          section.value
+        )
+      )
+    );
+  },
+
+  createRoundOverviewCard(label, value) {
+    const card =
+      document.createElement("section");
+
+    const heading =
+      document.createElement("h3");
+
+    const content =
+      document.createElement("div");
+
+    card.className =
+      "round-overview-card";
+
+    heading.className =
+      "round-overview-card-title";
+
+    content.className =
+      "round-overview-card-content";
+
+    heading.textContent = label;
+
+    if (Array.isArray(value)) {
+      const values =
+        value
+          .map(item =>
+            typeof item === "string"
+              ? item.trim()
+              : String(item)
+          )
+          .filter(Boolean);
+
+      if (values.length) {
+        const list =
+          document.createElement("ul");
+
+        values.forEach(item => {
+          const listItem =
+            document.createElement("li");
+
+          listItem.textContent = item;
+          list.append(listItem);
+        });
+
+        content.append(list);
+      } else {
+        content.textContent = "—";
+      }
+    } else {
+      content.textContent =
+        this.formatRoundOverviewValue(value);
+    }
+
+    card.append(
+      heading,
+      content
+    );
+
+    return card;
+  },
+
+  formatRoundOverviewValue(value) {
+    if (
+      value === null ||
+      value === undefined ||
+      value === ""
+    ) {
+      return "—";
+    }
+
+    if (Array.isArray(value)) {
+      const values =
+        value
+          .map(item =>
+            typeof item === "string"
+              ? item.trim()
+              : String(item)
+          )
+          .filter(Boolean);
+
+      return values.length
+        ? values.join(" • ")
+        : "—";
+    }
+
+    if (typeof value === "object") {
+      const values =
+        Object.entries(value)
+          .filter(([, item]) =>
+            item !== null &&
+            item !== undefined &&
+            item !== ""
+          )
+          .map(([key, item]) =>
+            window.VastApp.utils.humanize(key) +
+            ": " +
+            this.formatRoundOverviewValue(item)
+          );
+
+      return values.length
+        ? values.join(" • ")
+        : "—";
+    }
+
+    return String(value);
+  }
 };

@@ -36,6 +36,7 @@ window.VastApp.app = {
     app.stockPriceChart?.init();
     app.overallActivity?.render();
     app.internalStateHeatmap?.render();
+    app.trendingHashtags?.render();
 
     this.bindEvents();
     this.renderRound();

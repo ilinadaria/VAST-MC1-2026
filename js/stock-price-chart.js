@@ -146,7 +146,7 @@ window.VastApp.stockPriceChart = {
         ? Math.max(1, Math.abs(maximum) * 0.03)
         : (maximum - minimum) * 0.12;
 
-    const yMinimum = minimum - padding;
+    const yMinimum = Math.max(0, minimum - padding);
     const yMaximum = maximum + padding;
 
     const xFor = index =>

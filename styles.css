@@ -82,7 +82,8 @@ h2 {
   grid-template-rows:
     300px
     140px
-    minmax(260px, 1fr);
+    minmax(260px, 1fr)
+    170px;
   gap: 14px;
   min-height: 100vh;
   padding: 14px;
@@ -124,6 +125,15 @@ h2 {
   overflow: hidden;
 }
 
+.trending-hashtags-panel {
+  grid-column: 1 / 5;
+  grid-row: 4;
+
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  overflow: hidden;
+}
+
 .timeline-panel {
   grid-column: 5 / 13;
   grid-row: 1 / 3;
@@ -138,7 +148,7 @@ h2 {
 
 .agent-metrics-panel {
   grid-column: 5 / 13;
-  grid-row: 3;
+  grid-row: 3 / 5;
 
   display: grid;
   grid-template-rows: auto minmax(0, 1fr);
@@ -501,9 +511,60 @@ h2 {
   min-height: 0;
   overflow: auto;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 20px;
+  grid-template-rows: auto auto;
+  gap: 16px;
   padding: 16px;
+}
+
+.round-overview-info {
+  display: grid;
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.round-overview-card {
+  min-width: 0;
+  padding: 10px 11px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fafbfc;
+}
+
+.round-overview-card.market-snapshot-card {
+  grid-column: 1 / -1;
+  border-left: 3px solid var(--accent);
+}
+
+.round-overview-card-title {
+  margin: 0 0 6px;
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.round-overview-card-content {
+  color: var(--text);
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.round-overview-card-content ul {
+  display: grid;
+  gap: 3px;
+  margin: 0;
+  padding-left: 15px;
+}
+
+.round-overview-charts {
+  display: grid;
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
 }
 
 #agentVolumeChart,
@@ -581,7 +642,7 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 5px 9px;
-  margin: -1px 0 9px;
+  margin: 5px 0 9px;
 }
 
 .agent-channel-legend-item {
@@ -605,6 +666,178 @@ h2 {
   padding: 18px;
 }
 
+
+/* Trending hashtags by round */
+
+.trending-hashtags-heading {
+  display: flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 6px 8px 5px;
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.trending-hashtags {
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  padding: 10px 16px 12px 6px;
+}
+
+.hashtag-matrix {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  column-gap: 2px;
+  row-gap: 6px;
+}
+
+.hashtag-matrix-corner {
+  min-width: 0;
+  overflow: hidden;
+  padding-right: 5px;
+  color: var(--muted);
+  font-size: 6px;
+  font-weight: 700;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.hashtag-matrix-round {
+  min-width: 0;
+  min-height: 0;
+  height: 18px;
+  padding: 0;
+  border: 0;
+  border-radius: 2px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 6px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.hashtag-matrix-round:hover {
+  background: #f4f6f8;
+  color: var(--text);
+}
+
+.hashtag-matrix-round.selected-round {
+  background: rgba(45, 91, 255, 0.09);
+  color: var(--accent);
+  font-weight: 800;
+}
+
+.hashtag-matrix-round.embargo-round {
+  color: #dc2626;
+}
+
+.hashtag-matrix-label {
+  min-width: 0;
+  overflow: hidden;
+  padding-right: 5px;
+  color: #3f4652;
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.hashtag-matrix-cell {
+  align-self: center;
+  justify-self: center;
+  width: 9px;
+  height: 9px;
+  min-width: 9px;
+  min-height: 9px;
+  padding: 0;
+  border: 1px solid rgba(32, 36, 43, 0.12);
+  border-radius: 50%;
+  background: #cfd4da;
+  cursor: default;
+  transition:
+    transform 100ms ease,
+    filter 100ms ease,
+    box-shadow 100ms ease;
+}
+
+.hashtag-matrix-cell.present {
+  background: #8fc7ff;
+  cursor: pointer;
+}
+
+.hashtag-matrix-cell.present:hover {
+  z-index: 2;
+  filter: brightness(0.9);
+  transform: scale(1.45);
+}
+
+.hashtag-matrix-cell:focus-visible {
+  z-index: 2;
+  outline: none;
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.hashtag-matrix-cell.selected-round {
+  box-shadow:
+    0 0 0 2px #fff,
+    0 0 0 4px var(--accent);
+  transform: scale(1.08);
+}
+
+.hashtag-matrix-cell.present.selected-round {
+  background: #8fc7ff;
+}
+
+.hashtag-matrix-cell.selected-round:hover {
+  transform: scale(1.45);
+}
+
+.hashtag-matrix-empty {
+  padding: 14px;
+  color: var(--muted);
+  font-size: 9px;
+  text-align: center;
+}
+
+.hashtag-tooltip {
+  position: fixed;
+  z-index: 60;
+  width: min(300px, calc(100vw - 24px));
+  pointer-events: none;
+  padding: 10px 11px;
+  border: 1px solid #272b31;
+  border-radius: 8px;
+  background: rgba(24, 27, 32, 0.97);
+  color: white;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.hashtag-tooltip strong,
+.hashtag-tooltip span {
+  display: block;
+}
+
+.hashtag-tooltip span {
+  margin-top: 3px;
+  color: #c9ced6;
+}
+
+
 /* Responsive layout */
 
 @media (max-width: 1050px) {
@@ -618,14 +851,16 @@ h2 {
       430px
       minmax(320px, auto)
       240px
-      240px;
+      240px
+      170px;
   }
 
   .timeline-panel,
   .agent-metrics-panel,
   .overall-activity-panel,
   .stock-price-panel,
-  .internal-state-panel {
+  .internal-state-panel,
+  .trending-hashtags-panel {
     grid-column: 1;
     grid-row: auto;
   }
@@ -640,7 +875,16 @@ h2 {
   }
 
   .agent-metrics-content {
+    grid-template-rows: auto auto;
+  }
+
+  .round-overview-info,
+  .round-overview-charts {
     grid-template-columns: 1fr;
+  }
+
+  .round-overview-card.market-snapshot-card {
+    grid-column: auto;
   }
 
   .round-control select {
@@ -1607,4 +1851,488 @@ h2 {
 .internal-state-round-label.embargo-round-label.selected-round {
   background: rgba(220, 38, 38, 0.08);
   color: #dc2626;
+}
+
+/* =========================================================
+   FULL-PANEL SCREENSHOT MODE
+
+   Add the class `capture-overall-panel` to <body> in DevTools:
+   <body class="capture-overall-panel">
+
+   Remove the class afterward to restore the normal dashboard.
+   ========================================================= */
+
+body.capture-overall-panel {
+  min-width: 0;
+  overflow: visible;
+}
+
+body.capture-overall-panel .dashboard {
+  display: block;
+  min-height: 0;
+  height: auto;
+  overflow: visible;
+  padding: 14px;
+}
+
+body.capture-overall-panel .dashboard > * {
+  display: none !important;
+}
+
+body.capture-overall-panel .overall-activity-panel {
+  display: block !important;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  overflow: visible;
+}
+
+body.capture-overall-panel .overall-activity-charts {
+  display: grid;
+  width: 100%;
+  height: auto;
+  max-height: none;
+  overflow: visible;
+}
+
+body.capture-overall-panel .overall-agent-card,
+body.capture-overall-panel .overall-agent-chart {
+  break-inside: avoid;
+}
+
+body.capture-overall-panel .overall-agent-chart {
+  height: 126px;
+}
+
+/* Final hashtag-panel sizing overrides */
+
+.trending-hashtags-panel {
+  height: 260px !important;
+  min-height: 260px !important;
+  max-height: 260px !important;
+}
+
+.trending-hashtags {
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 0 !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
+  padding: 10px 16px 12px 6px !important;
+}
+
+.hashtag-matrix {
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: 100% !important;
+  grid-template-columns:
+    74px repeat(23, minmax(0, 1fr)) !important;
+  column-gap: 2px !important;
+  row-gap: 6px !important;
+}
+
+@media (max-width: 1050px) {
+  .trending-hashtags-panel {
+    height: 260px !important;
+    min-height: 260px !important;
+    max-height: 260px !important;
+  }
+
+  .dashboard {
+    grid-template-rows: none !important;
+    grid-auto-rows: auto !important;
+  }
+
+  .internal-state-panel,
+  .trending-hashtags-panel {
+    width: 100% !important;
+  }
+}
+
+
+/* Compact hashtag and internal-state panels */
+
+.trending-hashtags-panel {
+  grid-template-rows: minmax(0, 1fr) !important;
+}
+
+.trending-hashtags-heading {
+  display: none !important;
+}
+
+.trending-hashtags {
+  padding-top: 12px !important;
+}
+
+.internal-state-heatmap {
+  display: flex !important;
+  align-items: flex-start !important;
+}
+
+.internal-state-grid {
+  height: auto !important;
+  align-content: start !important;
+  grid-auto-rows: 24px !important;
+  row-gap: 5px !important;
+}
+
+
+/* Final lower-left panel sizing */
+
+.dashboard {
+  grid-template-rows:
+    300px
+    140px
+    220px
+    220px !important;
+}
+
+.internal-state-panel,
+.trending-hashtags-panel {
+  height: 220px !important;
+  min-height: 220px !important;
+  max-height: 220px !important;
+}
+
+.internal-state-heatmap,
+.trending-hashtags {
+  height: 100% !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
+}
+
+.internal-state-grid {
+  height: auto !important;
+  align-content: start !important;
+  grid-auto-rows: 24px !important;
+  row-gap: 5px !important;
+}
+
+.hashtag-matrix {
+  height: auto !important;
+  align-content: start !important;
+  grid-auto-rows: 24px !important;
+  row-gap: 5px !important;
+}
+
+@media (max-width: 1050px) {
+  .internal-state-panel,
+  .trending-hashtags-panel {
+    height: 220px !important;
+    min-height: 220px !important;
+    max-height: 220px !important;
+  }
+}
+
+
+/* Fit all state and hashtag rows without extra empty space */
+
+.dashboard {
+  grid-template-rows:
+    300px
+    140px
+    240px
+    240px !important;
+}
+
+.internal-state-panel,
+.trending-hashtags-panel {
+  height: 240px !important;
+  min-height: 240px !important;
+  max-height: 240px !important;
+}
+
+.internal-state-grid,
+.hashtag-matrix {
+  grid-auto-rows: 22px !important;
+  row-gap: 3px !important;
+  align-content: start !important;
+}
+
+.internal-state-heatmap {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+.trending-hashtags {
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+@media (max-width: 1050px) {
+  .internal-state-panel,
+  .trending-hashtags-panel {
+    height: 240px !important;
+    min-height: 240px !important;
+    max-height: 240px !important;
+  }
+}
+
+
+/* Slightly taller lower panels */
+
+.dashboard {
+  grid-template-rows:
+    300px
+    140px
+    255px
+    255px !important;
+}
+
+.internal-state-panel,
+.trending-hashtags-panel {
+  height: 255px !important;
+  min-height: 255px !important;
+  max-height: 255px !important;
+}
+
+@media (max-width: 1050px) {
+  .internal-state-panel,
+  .trending-hashtags-panel {
+    height: 255px !important;
+    min-height: 255px !important;
+    max-height: 255px !important;
+  }
+}
+
+
+/* Final compact sizing for the two lower-left panels */
+
+.dashboard {
+  grid-template-rows:
+    300px
+    140px
+    215px
+    215px !important;
+}
+
+.internal-state-panel,
+.trending-hashtags-panel {
+  height: 215px !important;
+  min-height: 215px !important;
+  max-height: 215px !important;
+}
+
+.internal-state-heatmap,
+.trending-hashtags {
+  height: 100% !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
+  padding-top: 7px !important;
+  padding-bottom: 7px !important;
+}
+
+.internal-state-grid {
+  height: auto !important;
+  align-content: start !important;
+  grid-template-rows:
+    repeat(7, 20px) !important;
+  grid-auto-rows: 20px !important;
+  row-gap: 2px !important;
+}
+
+.hashtag-matrix {
+  height: auto !important;
+  align-content: start !important;
+  grid-template-rows:
+    repeat(8, 20px) !important;
+  grid-auto-rows: 20px !important;
+  row-gap: 2px !important;
+}
+
+.internal-state-cell,
+.hashtag-matrix-cell {
+  width: 9px !important;
+  height: 9px !important;
+  min-width: 9px !important;
+  min-height: 9px !important;
+}
+
+.internal-state-agent-label,
+.hashtag-matrix-label {
+  line-height: 20px !important;
+}
+
+@media (max-width: 1050px) {
+  .internal-state-panel,
+  .trending-hashtags-panel {
+    height: 215px !important;
+    min-height: 215px !important;
+    max-height: 215px !important;
+  }
+}
+
+
+/* Let the lower-left panels end directly under their content */
+
+.dashboard {
+  grid-template-rows:
+    300px
+    140px
+    auto
+    auto !important;
+  align-items: start;
+}
+
+.internal-state-panel,
+.trending-hashtags-panel {
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  align-self: start !important;
+}
+
+.internal-state-heatmap,
+.trending-hashtags {
+  height: auto !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+.internal-state-grid {
+  height: auto !important;
+  grid-template-rows:
+    repeat(7, 24px) !important;
+  grid-auto-rows: 24px !important;
+  row-gap: 4px !important;
+  align-content: start !important;
+}
+
+.hashtag-matrix {
+  height: auto !important;
+  grid-template-rows:
+    repeat(8, 24px) !important;
+  grid-auto-rows: 24px !important;
+  row-gap: 4px !important;
+  align-content: start !important;
+}
+
+.internal-state-agent-label,
+.hashtag-matrix-label {
+  line-height: 24px !important;
+}
+
+/* Distinguish hashtag presence from the state palette */
+
+.hashtag-matrix-cell.present,
+.hashtag-matrix-cell.present.selected-round {
+  background: #b794f4 !important;
+  border-color: rgba(88, 53, 145, 0.22) !important;
+}
+
+.hashtag-matrix-cell.present:hover {
+  filter: brightness(0.9);
+}
+
+@media (max-width: 1050px) {
+  .internal-state-panel,
+  .trending-hashtags-panel {
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+  }
+}
+
+
+/* Repair dashboard grid after compact lower-panel changes */
+
+.dashboard {
+  grid-template-rows:
+    300px
+    140px
+    240px
+    240px !important;
+  align-items: stretch !important;
+}
+
+.panel {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden !important;
+}
+
+.internal-state-panel {
+  grid-column: 1 / 5 !important;
+  grid-row: 3 !important;
+  height: 240px !important;
+  min-height: 240px !important;
+  max-height: 240px !important;
+}
+
+.trending-hashtags-panel {
+  grid-column: 1 / 5 !important;
+  grid-row: 4 !important;
+  height: 240px !important;
+  min-height: 240px !important;
+  max-height: 240px !important;
+}
+
+.agent-metrics-panel {
+  grid-column: 5 / 13 !important;
+  grid-row: 3 / 5 !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
+}
+
+.internal-state-heatmap,
+.trending-hashtags {
+  height: 100% !important;
+  min-height: 0 !important;
+  overflow: hidden !important;
+  padding-top: 8px !important;
+  padding-bottom: 8px !important;
+}
+
+.internal-state-grid {
+  height: auto !important;
+  align-content: start !important;
+  grid-template-rows:
+    repeat(7, 24px) !important;
+  grid-auto-rows: 24px !important;
+  row-gap: 4px !important;
+}
+
+.hashtag-matrix {
+  height: auto !important;
+  align-content: start !important;
+  grid-template-rows:
+    repeat(8, 24px) !important;
+  grid-auto-rows: 24px !important;
+  row-gap: 4px !important;
+}
+
+.overall-activity-panel,
+.stock-price-panel,
+.timeline-panel,
+.agent-metrics-panel {
+  z-index: 1;
+}
+
+.internal-state-panel,
+.trending-hashtags-panel {
+  z-index: 2;
+}
+
+@media (max-width: 1050px) {
+  .dashboard {
+    grid-template-rows: none !important;
+    grid-auto-rows: auto !important;
+  }
+
+  .internal-state-panel,
+  .trending-hashtags-panel {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+    height: 240px !important;
+    min-height: 240px !important;
+    max-height: 240px !important;
+  }
+
+  .agent-metrics-panel {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+  }
 }

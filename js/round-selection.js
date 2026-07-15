@@ -46,5 +46,6 @@ window.VastApp.roundSelection = {
     app.stockPriceChart?.updateSelection(roundIndex);
     app.overallActivity?.updateSelection(roundIndex);
     app.internalStateHeatmap?.updateSelection(roundIndex);
+    app.trendingHashtags?.updateSelection(roundIndex);
   }
 };

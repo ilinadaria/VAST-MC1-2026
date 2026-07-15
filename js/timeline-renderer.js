@@ -31,6 +31,48 @@ window.VastApp.timelineRenderer = {
     );
   },
 
+
+  normalizeAgentName(value) {
+    return String(value || "")
+      .toLowerCase()
+      .replace(/-agent$/i, "")
+      .replace(/agent/g, "")
+      .replace(/[^a-z0-9]/g, "");
+  },
+
+  getUnavailableAgentIds(round, agents) {
+    const unavailable =
+      round.environment_context
+        ?.agents_unavailable || [];
+
+    const unavailableNames =
+      new Set(
+        unavailable.map(value =>
+          this.normalizeAgentName(value)
+        )
+      );
+
+    return new Set(
+      agents
+        .filter(agent => {
+          const aliases = [
+            agent.agent_id,
+            agent.agent_label,
+            agent.agent_role
+          ]
+            .filter(Boolean)
+            .map(value =>
+              this.normalizeAgentName(value)
+            );
+
+          return aliases.some(alias =>
+            unavailableNames.has(alias)
+          );
+        })
+        .map(agent => agent.agent_id)
+    );
+  },
+
   render(round) {
     const app = window.VastApp;
     const messages = [...(round.communications || [])]
@@ -41,6 +83,11 @@ window.VastApp.timelineRenderer = {
     const xScale = app.timelineLayout.timeScale(extent.start, extent.end, layout.left, layout.plotEndX);
     const laneY = app.timelineLayout.lanePositions(agents, layout);
     const positions = app.timelineLayout.messagePositions(messages, laneY, xScale);
+    const unavailableAgentIds =
+      this.getUnavailableAgentIds(
+        round,
+        agents
+      );
 
     app.state.replyTargets = app.replies.resolve(messages);
 
@@ -52,7 +99,13 @@ window.VastApp.timelineRenderer = {
     });
 
     this.drawAxis(svg, extent, xScale, layout);
-    this.drawLanes(svg, agents, laneY, layout);
+    this.drawLanes(
+      svg,
+      agents,
+      laneY,
+      layout,
+      unavailableAgentIds
+    );
     this.drawLinks(svg, messages, positions);
     this.drawMessages(svg, messages, positions);
     this.bindBackground(svg);
@@ -87,25 +140,62 @@ window.VastApp.timelineRenderer = {
     });
   },
 
-  drawLanes(svg, agents, laneY, layout) {
+  drawLanes(
+    svg,
+    agents,
+    laneY,
+    layout,
+    unavailableAgentIds = new Set()
+  ) {
     const { utils } = window.VastApp;
-    agents.forEach(agent => {
-      const y = laneY.get(agent.agent_id);
-      svg.append(utils.createSvg("line", {
-        x1: layout.left,
-        y1: y,
-        x2: layout.plotEndX,
-        y2: y,
-        class: "lane-line",
-        "data-agent-id": agent.agent_id
-      }));
 
-      const label = utils.createSvg("text", {
-        x: layout.left - 14,
-        y: y + 4,
-        "text-anchor": "end",
-        class: "lane-label"
-      });
+    agents.forEach(agent => {
+      const y =
+        laneY.get(agent.agent_id);
+
+      const unavailable =
+        unavailableAgentIds.has(
+          agent.agent_id
+        );
+
+      const lane = utils.createSvg(
+        "line",
+        {
+          x1: layout.left,
+          y1: y,
+          x2: layout.plotEndX,
+          y2: y,
+          class:
+            unavailable
+              ? "lane-line inactive-agent-lane"
+              : "lane-line",
+          "data-agent-id":
+            agent.agent_id
+        }
+      );
+
+      if (unavailable) {
+        lane.setAttribute(
+          "stroke-dasharray",
+          "5 4"
+        );
+      }
+
+      svg.append(lane);
+
+      const label = utils.createSvg(
+        "text",
+        {
+          x: layout.left - 14,
+          y: y + 4,
+          "text-anchor": "end",
+          class:
+            unavailable
+              ? "lane-label inactive-agent-label"
+              : "lane-label"
+        }
+      );
+
       label.textContent =
         agent.agent_label ||
         agent.agent_id;
@@ -114,7 +204,12 @@ window.VastApp.timelineRenderer = {
         utils.createSvg("title");
 
       title.textContent =
-        this.getAgentDescription(agent);
+        this.getAgentDescription(agent) +
+        (
+          unavailable
+            ? " Unavailable in this round."
+            : ""
+        );
 
       label.append(title);
       svg.append(label);

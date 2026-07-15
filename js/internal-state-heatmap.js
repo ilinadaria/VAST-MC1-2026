@@ -57,7 +57,7 @@ window.VastApp.internalStateHeatmap = {
     grid.style.gridTemplateColumns =
       `74px repeat(${Math.max(1, rounds.length)}, minmax(0, 1fr))`;
     grid.style.gridTemplateRows =
-      `repeat(${Math.max(1, agents.length)}, minmax(24px, 1fr))`;
+      `repeat(${Math.max(1, agents.length)}, 24px)`;
 
     agents.forEach(agent => {
       grid.append(

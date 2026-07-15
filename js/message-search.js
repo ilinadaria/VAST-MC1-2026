@@ -28,11 +28,6 @@ window.VastApp.messageSearch = {
         "messageSearchCount"
       );
 
-    if (this.input) {
-      this.input.placeholder =
-        "Search exact words or message ID";
-    }
-
     if (
       !this.input ||
       !this.searchButton ||
@@ -86,17 +81,29 @@ window.VastApp.messageSearch = {
   },
 
   search() {
-    const query =
+    const rawQuery =
       this.input?.value || "";
 
-    if (!query.length) {
+    if (!rawQuery.trim().length) {
       this.clear();
       return;
     }
 
-    this.query = query;
+    const parsed =
+      this.parseSearchQuery(rawQuery);
+
+    this.query =
+      parsed.textQuery;
+
+    this.roundRange =
+      parsed.roundRange;
+
     this.matches =
-      this.findAllMatches(query);
+      this.findAllMatches(
+        parsed.textQuery,
+        parsed.roundRange
+      );
+
     this.activeIndex =
       this.matches.length ? 0 : -1;
 
@@ -109,34 +116,109 @@ window.VastApp.messageSearch = {
     }
   },
 
-  findAllMatches(query) {
+  parseSearchQuery(rawQuery) {
+    const trimmed =
+      rawQuery.trim();
+
+    const roundPattern =
+      /(?:^|,)\s*R(\d+)(?:\s*-\s*R?(\d+))?\s*$/i;
+
+    const match =
+      trimmed.match(roundPattern);
+
+    if (!match) {
+      return {
+        textQuery: trimmed,
+        roundRange: null
+      };
+    }
+
+    const firstRound =
+      Number(match[1]);
+
+    const secondRound =
+      match[2]
+        ? Number(match[2])
+        : firstRound;
+
+    const startRound =
+      Math.min(
+        firstRound,
+        secondRound
+      );
+
+    const endRound =
+      Math.max(
+        firstRound,
+        secondRound
+      );
+
+    const textQuery =
+      trimmed
+        .slice(0, match.index)
+        .replace(/,\s*$/, "")
+        .trim();
+
+    return {
+      textQuery,
+      roundRange: {
+        start: startRound,
+        end: endRound
+      }
+    };
+  },
+
+  roundIsIncluded(
+    roundIndex,
+    roundRange
+  ) {
+    if (!roundRange) {
+      return true;
+    }
+
+    const roundNumber =
+      roundIndex + 1;
+
+    return (
+      roundNumber >= roundRange.start &&
+      roundNumber <= roundRange.end
+    );
+  },
+
+  findAllMatches(
+    query,
+    roundRange = null
+  ) {
+    const normalizedQuery =
+      query.toLocaleLowerCase();
+
     const matches = [];
 
     (
       window.VAST_DATA?.rounds || []
     ).forEach((round, roundIndex) => {
+      if (
+        !this.roundIsIncluded(
+          roundIndex,
+          roundRange
+        )
+      ) {
+        return;
+      }
+
       (
         round.communications || []
       ).forEach(message => {
         const content =
           String(message.content || "");
 
-        const messageId =
-          String(message.message_id || "");
+        const textMatches =
+          !normalizedQuery.length ||
+          content
+            .toLocaleLowerCase()
+            .includes(normalizedQuery);
 
-        const matchesContent =
-          this.containsWholePhrase(
-            content,
-            query
-          );
-
-        const matchesMessageId =
-          messageId === query;
-
-        if (
-          matchesContent ||
-          matchesMessageId
-        ) {
+        if (textMatches) {
           matches.push({
             roundIndex,
             message
@@ -159,59 +241,6 @@ window.VastApp.messageSearch = {
         b.roundIndex
       );
     });
-  },
-
-  containsWholePhrase(text, query) {
-    if (!query) {
-      return false;
-    }
-
-    let startIndex =
-      text.indexOf(query);
-
-    while (startIndex !== -1) {
-      const before =
-        startIndex > 0
-          ? text[startIndex - 1]
-          : "";
-
-      const endIndex =
-        startIndex + query.length;
-
-      const after =
-        endIndex < text.length
-          ? text[endIndex]
-          : "";
-
-      const startsAtBoundary =
-        !before ||
-        !this.isWordCharacter(before);
-
-      const endsAtBoundary =
-        !after ||
-        !this.isWordCharacter(after);
-
-      if (
-        startsAtBoundary &&
-        endsAtBoundary
-      ) {
-        return true;
-      }
-
-      startIndex =
-        text.indexOf(
-          query,
-          startIndex + 1
-        );
-    }
-
-    return false;
-  },
-
-  isWordCharacter(character) {
-    return /[\\p{L}\\p{N}_]/u.test(
-      character
-    );
   },
 
   move(direction) {
@@ -248,8 +277,6 @@ window.VastApp.messageSearch = {
     ) {
       app.state.roundIndex =
         result.roundIndex;
-      app.state.highlightedRoundIndex =
-        result.roundIndex;
 
       app.elements.roundSelect.value =
         String(result.roundIndex);
@@ -270,7 +297,10 @@ window.VastApp.messageSearch = {
   },
 
   afterTimelineRender() {
-    if (!this.query) {
+    if (
+      !this.query &&
+      !this.roundRange
+    ) {
       return;
     }
 
@@ -341,11 +371,6 @@ window.VastApp.messageSearch = {
     if (!svg) {
       return;
     }
-
-    svg.classList.toggle(
-      "message-search-active",
-      Boolean(this.query)
-    );
 
     const roundIndex =
       app.state.roundIndex;
@@ -430,16 +455,8 @@ window.VastApp.messageSearch = {
       window.VastApp.elements.timeline
         ?.querySelector("svg");
 
-    if (!svg) {
-      return;
-    }
-
-    svg.classList.remove(
-      "message-search-active"
-    );
-
     svg
-      .querySelectorAll(
+      ?.querySelectorAll(
         ".message-node.search-match, " +
         ".message-node.search-active"
       )
@@ -453,6 +470,7 @@ window.VastApp.messageSearch = {
 
   clear() {
     this.query = "";
+    this.roundRange = null;
     this.matches = [];
     this.activeIndex = -1;
     this.pendingMessageId = null;
@@ -466,31 +484,40 @@ window.VastApp.messageSearch = {
   },
 
   updateCounter() {
-    const total =
-      this.matches.length;
+  const total =
+    this.matches.length;
 
-    const current =
-      total &&
-      this.activeIndex >= 0
-        ? this.activeIndex + 1
-        : 0;
+  const current =
+    total &&
+    this.activeIndex >= 0
+      ? this.activeIndex + 1
+      : 0;
 
-    if (this.count) {
+  if (this.count) {
+    if (!total) {
       this.count.textContent =
-        `${current}/${total}`;
-    }
-
-    const disabled =
-      total <= 1;
-
-    if (this.previousButton) {
-      this.previousButton.disabled =
-        disabled;
-    }
-
-    if (this.nextButton) {
-      this.nextButton.disabled =
-        disabled;
+        "0 messages found";
+    } else {
+      this.count.textContent =
+        current +
+        " of " +
+        total +
+        " message" +
+        (total === 1 ? "" : "s");
     }
   }
+
+  const disabled =
+    total <= 1;
+
+  if (this.previousButton) {
+    this.previousButton.disabled =
+      disabled;
+  }
+
+  if (this.nextButton) {
+    this.nextButton.disabled =
+      disabled;
+  }
+}
 };
